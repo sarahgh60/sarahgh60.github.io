@@ -1,0 +1,502 @@
+{
+  "schema": 1,
+  "slug": "buildings-to-products",
+  "sheet": "A-106",
+  "order": 6,
+  "title": "From buildings to products",
+  "title_html": "From buildings to <em>products</em>",
+  "hook": "Six years of plans, sections and site meetings — and what they taught me about designing products and running teams.",
+  "dek": "Six years taking residential and mixed-use buildings from concept to construction documents. The habits I lead with started there: circulation first, one grid, coordination before drawing.",
+  "sector": "Architecture & planning",
+  "filters": [
+    "architecture"
+  ],
+  "industry": "Architecture",
+  "era": "Construction and architecture practice, 2011–17",
+  "years": "2011–17",
+  "year_start": 2011,
+  "year_end": 2017,
+  "role": "Senior architect (junior to senior)",
+  "altitude": "hands-on",
+  "team": "Project designers and technologists, with up to 12 consultant disciplines",
+  "duration": "6 years",
+  "platforms": [
+    "CAD and BIM drawings",
+    "Physical models",
+    "Site"
+  ],
+  "stage": "clay",
+  "education": "B.Sc. Architectural Engineering 2000–05 · M.Sc. Urban & Regional Planning and Design 2009–11",
+  "keywords": [
+    "architecture",
+    "architect",
+    "planning",
+    "urban design",
+    "construction documents",
+    "BIM",
+    "mixed-use",
+    "residential",
+    "coordination",
+    "grid",
+    "circulation"
+  ],
+  "register_line": "11 projects, concept to construction documents",
+  "metrics": [
+    {
+      "label": "Concept to construction documents",
+      "delta": "11 projects",
+      "period": "Residential and mixed-use, 2011–17",
+      "canon": "arch.projects",
+      "dim": "2011–17"
+    },
+    {
+      "label": "Consultant disciplines coordinated",
+      "delta": "up to 12",
+      "period": "Per project, through weekly clash reviews",
+      "canon": "arch.disciplines",
+      "dim": "per project"
+    },
+    {
+      "label": "Site RFIs per project",
+      "delta": "−30%",
+      "period": "2016 against 2014, after weekly coordination reviews",
+      "canon": "arch.rfis",
+      "dim": "2016 vs 2014"
+    }
+  ],
+  "tldr": [
+    "Our own site teams built from every sheet, so every drawing clash became our own delay and cost.",
+    "I learned to draw circulation first, set out one grid and coordinate a dozen disciplines before drawing.",
+    "Weekly clash reviews cut site RFIs 30%; we cut an atrium to hold the cost plan.",
+    "Most of how I run design teams started here."
+  ],
+  "challenge": {
+    "inherited": "“Which of these two drawings do I build from?” was the question our superintendent asked us every week.",
+    "body": "The practice designed and built five-storey mixed-use buildings: retail at grade, suites above, a parkade below and up to twelve consultant disciplines on each job. Consultants met each other’s clashes on site, and most requests for information (RFIs) traced back to two drawings that disagreed: a duct through a beam, a door into a column."
+  },
+  "role_led": [
+    "Worked on 11 residential and mixed-use projects from concept to construction documents, leading the later ones as project architect",
+    "Ran weekly clash reviews with up to 12 consultant disciplines and our site superintendents",
+    "Wrote the practice’s sheet-set standard: series, title block, keynotes and revision log",
+    "Took options and cost trade-offs to clients in person, before the estimate forced them",
+    "Reviewed junior architects’ sets sheet by sheet and coached them through their first construction documents"
+  ],
+  "role_team": [
+    "Project designers and technologists drew the sets with me",
+    "A project manager owned the fee, the schedule and the client contract",
+    "Structural, mechanical, electrical, civil, code and cost consultants owned their own drawings",
+    "Our site teams built from the drawings and sent an RFI every time two of them disagreed"
+  ],
+  "roster": [
+    {
+      "abbr": "DL",
+      "label": "Project architect (me)"
+    },
+    {
+      "abbr": "PD",
+      "label": "Project designers & technologists"
+    },
+    {
+      "abbr": "PM",
+      "label": "Project manager"
+    },
+    {
+      "abbr": "CA",
+      "label": "Contract administrator"
+    },
+    {
+      "abbr": "ENG",
+      "label": "Consultant disciplines"
+    }
+  ],
+  "constraints": [
+    "Zoning: height, setbacks, density and parking ratios",
+    "Building code: fire separations, exits and accessibility",
+    "A fixed cost plan, checked at every stage",
+    "Up to 12 consultant disciplines on one set",
+    "Design and construction under one roof: our own site teams built from every sheet"
+  ],
+  "principles": [
+    {
+      "id": "P1",
+      "title": "Circulation first.",
+      "body": "Before rooms, I drew how people move: street to lift, lift to suite, suite to exit, truck to loading bay. Rooms fill the space between."
+    },
+    {
+      "id": "P2",
+      "title": "The grid is a promise.",
+      "body": "Set out the structural grid first and keep it. Every consultant, trade and future tenant plans against it, so moving one column moves everyone."
+    },
+    {
+      "id": "P3",
+      "title": "Coordinate before you draw.",
+      "body": "An hour at one table with the structural and mechanical engineers saves a week of RFIs on site. Clashes are cheapest on paper."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "decision": "Weekly clash reviews with every consultant",
+      "why": "Most RFIs on our early projects traced back to two drawings that disagreed. A clash found on site cost a week; found on a Tuesday, it cost an hour.",
+      "tradeoff": "Two hours a week from every consultant through design development and construction documents, time their fees had not planned for.",
+      "risk": "Reviews drifting into status meetings. Each one ended with a clash log: item, owner, due date, open or closed.",
+      "owner": "Me, with the project manager and each consultant’s lead",
+      "status": "shipped"
+    },
+    {
+      "id": "D2",
+      "decision": "One sheet-set standard for the practice",
+      "why": "Every team numbered, titled and noted its sheets differently. Consultants and our own site teams relearned the set on every job, and checking took longer than drawing.",
+      "tradeoff": "A month of evenings rebuilding templates, and senior colleagues giving up habits they liked.",
+      "risk": "A standard nobody used. I piloted it on one project, then made it the template every new project opened from.",
+      "owner": "Me, with the practice’s principals",
+      "status": "shipped"
+    },
+    {
+      "id": "D3",
+      "decision": "A double-height atrium over the residential lobby",
+      "why": "The pre-tender estimate came in 6% over the cost plan, and the atrium was most of it: two suites lost on Level 2, a fire separation and smoke control.",
+      "tradeoff": "The lobby lost its tallest moment. A 3 × 6 m light well through the four residential floors brought daylight down to the lobby and into every corridor instead.",
+      "risk": "Dark corridors on the upper floors. We checked daylight on the section at every level before the client signed off.",
+      "owner": "Me, with the project manager, the cost consultant and the client",
+      "status": "descoped"
+    },
+    {
+      "id": "D4",
+      "decision": "One 8.4 m structural grid from the parkade to the roof",
+      "why": "8.4 m holds three parking stalls below, a shopfront at grade and a suite width above, so every column runs straight to the foundation without a transfer slab.",
+      "tradeoff": "Suites had to fit the bay. Two corner suites took three rounds of planning before they worked.",
+      "risk": "Retail tenants wanting other frontages. The grid allowed shopfronts one or two bays wide, and we showed both to the leasing agent early.",
+      "owner": "Me, with the structural engineer",
+      "status": "shipped"
+    }
+  ],
+  "process": [
+    {
+      "id": "circulation",
+      "eyebrow": "Plan",
+      "heading": "Draw the paths, then the rooms",
+      "body": [
+        "On every plan I started with movement: street to lift, lift to suite, suite to exit, truck to loading bay. Rooms are what is left between the paths.",
+        "On this Level 1 the street doors, the mailboxes and both lifts sit on one straight line, 15 m long, and the three shops back onto a shared service corridor. It is the same instinct I now bring to user flows."
+      ],
+      "align": "left",
+      "figure": {
+        "image": "plan",
+        "caption": "P1 · Circulation first: street doors to lifts in one straight line, under the skylight; the shops back onto one service corridor."
+      }
+    },
+    {
+      "id": "cost-plan",
+      "eyebrow": "Section",
+      "heading": "Cut the atrium, keep the light",
+      "body": [
+        "The client loved the double-height lobby. The pre-tender estimate came in 6% over the cost plan, and the atrium was most of it.",
+        "Instead of defending the image, I went back to what it was for: daylight in the lobby and a sense of arrival. A 3 × 6 m light well through the residential floors did both, gave back the Level 2 suites the atrium had taken, and lit every corridor on the way down."
+      ],
+      "align": "right",
+      "figure": {
+        "image": "section",
+        "caption": "D3 · The light well runs from the roof to a skylight over the lobby, past every corridor on the way down.",
+        "decision": "D3"
+      }
+    },
+    {
+      "id": "coordination",
+      "eyebrow": "Coordination",
+      "heading": "Clashes are cheapest on paper",
+      "body": [
+        "From 2015 I ran a two-hour clash review every Tuesday: structural, mechanical, electrical and, once a job reached site, our superintendent, around one model and one printed set. Every clash went into a log with an owner and a date.",
+        "RFIs fell as projects drawn under the reviews reached site: 50 per project a quarter in 2014, 35 in 2016. It is the habit behind every design review I run with engineering today."
+      ],
+      "align": "left",
+      "figure": {
+        "artifact": "rfi-trend",
+        "caption": "D1 · 50 RFIs per project a quarter in 2014, 35 in 2016: −30%.",
+        "decision": "D1"
+      }
+    },
+    {
+      "id": "drawing-set",
+      "eyebrow": "Drawing set",
+      "heading": "One standard for every sheet",
+      "body": [
+        "Each team numbered and noted its drawings its own way, so consultants and our site teams relearned every set. I wrote one standard for the practice: sheet series, a single title block, keynotes tied to one legend, and revision clouds with a log entry for every change.",
+        "It is how I still think about a design system: agree the structure once, so people spend their time on the work. It is also why every page of this site is a numbered sheet."
+      ],
+      "align": "right",
+      "figure": {
+        "artifact": "sheet-standard",
+        "caption": "D2 · Every set the practice issued from 2015 opened from this template.",
+        "decision": "D2"
+      }
+    }
+  ],
+  "compare": {
+    "before": "grid-plan",
+    "after": "grid-app",
+    "label_before": "Building grid, 2016",
+    "label_after": "Product grid, 2026",
+    "caption": "D4 · Same frame, same lines: one 8.4 m bay holds two layout columns, and every panel breaks on a structural line.",
+    "decision": "D4",
+    "modes": [
+      "wipe",
+      "overlay"
+    ]
+  },
+  "gallery": [
+    {
+      "image": "clash-log",
+      "caption": "D1 · The Tuesday clash log: one table, an owner and a date on every clash, closed on paper before site.",
+      "decision": "D1"
+    },
+    {
+      "image": "sheet-index",
+      "caption": "D2 · Cover sheet A-000: the same index, consultant list and revision log open every set.",
+      "decision": "D2"
+    },
+    {
+      "image": "cover",
+      "caption": "A Level 1 plan meets an App Home on the same column grid."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "rfi-trend",
+      "kind": "bars",
+      "title": "Site RFIs per project, by quarter",
+      "caption": "Average RFIs per project under construction, by quarter. Projects drawn under the reviews reached site through 2015; 2016 is the first full year.",
+      "data": {
+        "orientation": "vertical",
+        "unit": "RFIs per project",
+        "x_label": "Quarter · weekly clash reviews from Q1 2015",
+        "bars": [
+          {
+            "label": "Q1 ’14",
+            "value": 48
+          },
+          {
+            "label": "Q2",
+            "value": 53
+          },
+          {
+            "label": "Q3",
+            "value": 47
+          },
+          {
+            "label": "Q4",
+            "value": 52
+          },
+          {
+            "label": "Q1 ’15",
+            "value": 49,
+            "note": "Weekly clash reviews start"
+          },
+          {
+            "label": "Q2",
+            "value": 44
+          },
+          {
+            "label": "Q3",
+            "value": 40
+          },
+          {
+            "label": "Q4",
+            "value": 37
+          },
+          {
+            "label": "Q1 ’16",
+            "value": 36,
+            "highlight": true
+          },
+          {
+            "label": "Q2",
+            "value": 34,
+            "highlight": true
+          },
+          {
+            "label": "Q3",
+            "value": 35,
+            "highlight": true
+          },
+          {
+            "label": "Q4",
+            "value": 35,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "sheet-standard",
+      "kind": "table",
+      "title": "One sheet-set standard",
+      "caption": "The practice standard: series numbers and the one rule each series keeps.",
+      "data": {
+        "head": [
+          "Series",
+          "Holds",
+          "Rule"
+        ],
+        "rows": [
+          [
+            "A-000",
+            "General: cover, sheet index, code analysis",
+            "Every set opens with the same index"
+          ],
+          [
+            "A-100",
+            "Plans, one per level",
+            "Same grid, same north, same origin"
+          ],
+          [
+            "A-200",
+            "Elevations",
+            "Materials keyed to one legend"
+          ],
+          [
+            "A-300",
+            "Sections",
+            "Levels measured from ±0.00"
+          ],
+          [
+            "A-500",
+            "Details",
+            "Called up from plans and sections, never orphaned"
+          ],
+          [
+            "A-600",
+            "Schedules",
+            "Doors, windows and finishes keyed by tag"
+          ]
+        ]
+      }
+    }
+  ],
+  "after_launch": [
+    {
+      "when": "+3 months",
+      "what": "The sheet-set standard becomes the template every new project opens from",
+      "metric": "6 series, 1 title block"
+    },
+    {
+      "when": "+12 months",
+      "what": "The first projects drawn under weekly clash reviews reach site",
+      "metric": "Clash logs closed before tender"
+    },
+    {
+      "when": "+2 years",
+      "what": "RFIs per project settle at 35 a quarter, down from 50",
+      "metric": "Site RFIs −30%"
+    }
+  ],
+  "not_taken": [
+    "Defend the atrium and cut finishes everywhere else to pay for it. The building would have looked right in renderings and worse to live in.",
+    "Automated clash detection on its own. The model found the clashes; the Tuesday table got them owned and closed.",
+    "A different grid for parking, shops and suites, joined by a transfer slab. More freedom on each floor, a deeper and costlier structure, and a building that fought itself."
+  ],
+  "reflections": [
+    "The drawing is not the building, and a design file is not the product. The work is getting everyone who builds it to read it the same way.",
+    "The hardest conversations were about cost, not form. Taking a trade-off to a client early, with options and numbers, is still how I talk to leadership."
+  ],
+  "deeper": [
+    {
+      "title": "How a clash review ran",
+      "body": [
+        "Every Tuesday, two hours, one table: me as project architect, the structural, mechanical and electrical engineers, and our site superintendent once construction started. Other disciplines joined when their drawings were in play.",
+        "We worked from one federated model and one printed set. Every clash went into a log with an owner, a due date and the sheets it touched; nothing left the room without a name on it.",
+        "The open items were the first page of the next week’s agenda, so they were the first thing everyone saw."
+      ]
+    },
+    {
+      "title": "The sheet-set standard",
+      "body": [
+        "Six series: A-000 general, A-100 plans, A-200 elevations, A-300 sections, A-500 details and A-600 schedules. One title block with the consultant list and a revision table, keynotes tied to a single legend, and a revision cloud, a delta and a log entry for every change.",
+        "New projects opened from a template with the standard already in place, so following it was the easy path."
+      ]
+    },
+    {
+      "title": "What carried over to product design",
+      "body": [
+        "Circulation became user flows. The structural grid became a layout grid and tokens. Clash reviews became design reviews with engineering. The cost plan became scope and sequencing. The drawing set became a design system.",
+        "Different vocabulary, same job: read the site, set out the grid, keep people moving, check the work."
+      ]
+    }
+  ],
+  "privacy_note": null,
+  "images": {
+    "cover": {
+      "w": 1200,
+      "h": 900,
+      "alt": "A Level 1 floor plan on the left meets an App Home on the right, both set out on the same column grid."
+    },
+    "hero": {
+      "w": 2400,
+      "h": 1500,
+      "alt": "Drawing sheet: Level 1 plan of a five-storey mixed-use building and Section A–A, set out on one 8.4 m grid."
+    },
+    "plan": {
+      "w": 1920,
+      "h": 1280,
+      "alt": "Level 1 plan at 1:100: street doors, mailboxes and both lifts on one straight line, with door tags and a room schedule."
+    },
+    "section": {
+      "w": 1920,
+      "h": 1280,
+      "alt": "Section A–A from the parkade to the roof at +18.00, with a light well bringing daylight to a skylight over the lobby."
+    },
+    "grid-plan": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "The Level 1 structural grid isolated: 8.4 m bays and 35 columns, with twelve layout columns overlaid in blue."
+    },
+    "grid-app": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "The same grid with an App Home laid on twelve columns: metric cards and panels break on the structural lines."
+    },
+    "clash-log": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Clash log for week 10, 2016: a duct through a transfer beam at 1:20 beside seven logged clashes, each with an owner and a date."
+    },
+    "sheet-index": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Cover sheet A-000: key plan, the drawing index by series with issue marks, twelve consultants and the revision log."
+    }
+  },
+  "seo": {
+    "description": "Architecture case study, 2011–17: residential and mixed-use buildings from concept to construction documents, and what carried over to product design."
+  },
+  "plates": [
+    {
+      "image": "hero",
+      "caption": "Level 1 plan and Section A–A on one 8.4 m grid"
+    },
+    {
+      "image": "grid-app",
+      "caption": "Same grid: an App Home on 8.4 m bays"
+    }
+  ],
+  "revisions": [
+    {
+      "rev": "A",
+      "label": "Issued for permit",
+      "date": "2015-11",
+      "href": "#constraints"
+    },
+    {
+      "rev": "B",
+      "label": "Issued for tender",
+      "date": "2015-12",
+      "href": "#decisions"
+    },
+    {
+      "rev": "C",
+      "label": "Issued for construction",
+      "date": "2016-02",
+      "href": "#after"
+    }
+  ]
+}

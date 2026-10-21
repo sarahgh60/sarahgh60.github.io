@@ -1,0 +1,493 @@
+{
+  "schema": 1,
+  "slug": "design-system",
+  "sheet": "A-104",
+  "order": 4,
+  "title": "One token system, three product teams",
+  "title_html": "One token system, three product <em>teams</em>",
+  "hook": "212 colour values, 37 button styles and three teams arguing about blue — turned into one system everyone ships from.",
+  "dek": "Three SaaS products, three brands, one codebase and no shared language. I led the token system that gave them one, and made adoption a choice teams made screen by screen.",
+  "sector": "SaaS · Design systems",
+  "filters": [
+    "saas"
+  ],
+  "industry": "SaaS",
+  "era": "Software studio, 2020–24",
+  "years": "2021–23",
+  "year_start": 2021,
+  "year_end": 2023,
+  "role": "Senior UX designer · system lead",
+  "altitude": "hands-on",
+  "team": "Designers, part-time front-end engineers, a QA engineer and a platform PM, serving three product teams",
+  "duration": "18 months",
+  "platforms": [
+    "Web",
+    "iOS",
+    "Android"
+  ],
+  "stage": "iris",
+  "keywords": [
+    "design system",
+    "design tokens",
+    "theming",
+    "dark mode",
+    "components",
+    "accessibility",
+    "WCAG",
+    "adoption",
+    "SaaS"
+  ],
+  "register_line": "Colour values 212 → 48 · coverage 22% → 78%",
+  "metrics": [
+    {
+      "label": "Colour values in code",
+      "from": "212",
+      "to": "48",
+      "period": "Audit, Oct 2021 → v2, Sep 2022",
+      "canon": "ds.colours"
+    },
+    {
+      "label": "Component coverage",
+      "from": "22%",
+      "to": "78%",
+      "period": "Production screens, Q4 2021 → Q1 2023",
+      "canon": "ds.coverage"
+    },
+    {
+      "label": "UI defects at QA",
+      "delta": "−31%",
+      "period": "Per release, two quarters after v2 vs the two before",
+      "canon": "ds.defects",
+      "dim": "per release"
+    }
+  ],
+  "tldr": [
+    "Three teams were building the same UI three times over.",
+    "I designed three token tiers, so code names what a colour is for and each brand is one file.",
+    "We killed the big-bang migration: screens moved when teams touched them, backed by weekly office hours.",
+    "Coverage rose 22% → 78%; UI defects at QA fell 31%."
+  ],
+  "challenge": {
+    "inherited": "“Which blue is the real blue?” was the question every new designer asked in their first week.",
+    "body": "Three products shared one codebase but not one vocabulary: 212 colour values, 37 button styles and nobody who owned either. Designers redrew the same table in three files, and engineers copied whichever version was closest. Dark mode for Field ops meant hunting down hundreds of hex values, and every release found the same contrast bugs at QA."
+  },
+  "role_led": [
+    "Audited every colour, text style and button across the three products, and published the counts",
+    "Designed the three-tier token model, its naming rules and the theme files",
+    "Drew the core components with the system designers, and reviewed every token change with front-end",
+    "Ran weekly office hours and the contribution review for all three teams",
+    "Reported coverage and QA defects to the product leads every quarter"
+  ],
+  "role_team": [
+    "The system designers built and documented the components, for web and mobile",
+    "Part-time front-end engineers owned the token build for web, iOS and Android",
+    "Our QA engineer tagged UI defects by cause, so we could count them per release",
+    "The platform PM negotiated time with each product team, sprint by sprint"
+  ],
+  "roster": [
+    {
+      "abbr": "DL",
+      "label": "Senior UX designer (me)"
+    },
+    {
+      "abbr": "PD",
+      "label": "Product designers"
+    },
+    {
+      "abbr": "ENG",
+      "label": "Front-end and QA engineers"
+    },
+    {
+      "abbr": "PM",
+      "label": "Platform PM"
+    }
+  ],
+  "constraints": [
+    "Three products, three brands",
+    "No feature freeze",
+    "WCAG 2.1 AA",
+    "Dark mode for one product",
+    "Contributions from every team",
+    "One source for web, iOS and Android"
+  ],
+  "principles": [
+    {
+      "id": "P1",
+      "title": "Name intent, not colour",
+      "body": "A token says what it is for, like action-primary or status-critical, so a rebrand or dark mode only changes values."
+    },
+    {
+      "id": "P2",
+      "title": "Pave the common path; let edges stay custom",
+      "body": "We systematized what every team built every week. Product-specific patterns stayed local until a second team needed them."
+    },
+    {
+      "id": "P3",
+      "title": "Adoption is a product with its own users",
+      "body": "Designers and engineers were our users. We measured coverage, held office hours and fixed their friction before adding components."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "decision": "Three tiers: primitive → semantic → component",
+      "why": "Product code should never touch a raw value. Components read semantic tokens, semantic tokens read primitives, and only the system team edits primitives.",
+      "tradeoff": "More names to learn up front, and a review for every new semantic token.",
+      "risk": "Semantic sprawl. We capped the layer at 32 tokens and audited it every quarter.",
+      "owner": "Me, with the front-end lead",
+      "status": "shipped"
+    },
+    {
+      "id": "D2",
+      "decision": "Theme by swapping semantics, never by forking",
+      "why": "Three brands and one dark mode needed different values on the same components. A theme is one file of semantic mappings.",
+      "tradeoff": "Product teams gave up one-off colours: each one became a token or went.",
+      "risk": "Contrast regressions inside a theme. Every mapping runs an automated WCAG 2.1 AA check, which is why Scheduling’s buttons use green-700.",
+      "owner": "Me and the system designers",
+      "status": "shipped"
+    },
+    {
+      "id": "D3",
+      "decision": "Migrate every legacy screen up front",
+      "why": "It needed a feature freeze none of the three products could afford. Screens moved to the system when a team touched them for real work.",
+      "tradeoff": "Old and new UI lived side by side in production for about a year.",
+      "risk": "Rarely touched screens staying legacy for good. We tracked them on the coverage dashboard and migrated the 20 most visited ourselves.",
+      "owner": "Me, agreed with the product leads",
+      "status": "killed"
+    },
+    {
+      "id": "D4",
+      "decision": "A contribution model with weekly office hours",
+      "why": "The system could not become a queue for three teams. Anyone could propose a component, and office hours turned a proposal into a review within a week.",
+      "tradeoff": "An hour a week of senior design and front-end time, every week.",
+      "risk": "Contributions that fork instead of extend. A pattern merges only when a second team has a use for it.",
+      "owner": "The system designers, on rotation",
+      "status": "shipped"
+    }
+  ],
+  "process": [
+    {
+      "id": "audit",
+      "eyebrow": "Audit",
+      "heading": "Count it before you fix it",
+      "body": [
+        "Before drawing anything, I counted. A script pulled every colour, text style, radius and shadow out of the three codebases, and I sorted the results by hand: 212 colour values, 37 button styles, 23 text styles.",
+        "The counts did more than any deck. Product leads saw the cost in their own code, and the numbers became the baseline we reported against."
+      ],
+      "align": "left",
+      "figure": {
+        "artifact": "style-audit",
+        "caption": "Unique values in production code: the audit, October 2021, against v2, September 2022."
+      }
+    },
+    {
+      "id": "tiers",
+      "eyebrow": "Tiers",
+      "heading": "Three names for every colour",
+      "body": [
+        "Primitives say what a value is: blue-600. Semantic tokens say what it is for: action-primary. Component tokens say where it goes: button-bg.",
+        "Product code may use only the last two. That single rule is what made theming and dark mode cheap later."
+      ],
+      "align": "right",
+      "figure": {
+        "artifact": "token-tiers",
+        "caption": "D1 · Every colour has three names; product code never sees the first.",
+        "decision": "D1"
+      }
+    },
+    {
+      "id": "themes",
+      "eyebrow": "Themes",
+      "heading": "A brand is a file of mappings",
+      "body": [
+        "Field ops, Billing and Scheduling kept their own colours. Each became a theme: the same 32 semantic names pointed at different primitives, and dark mode for Field ops was one more file.",
+        "Every mapping ran a contrast check. Scheduling’s brand green measured 4.3:1 on white, so its buttons map one step darker, to green-700."
+      ],
+      "align": "left",
+      "figure": {
+        "image": "tokens",
+        "caption": "D2 · One component set, three themes: the docs switch products by swapping semantics.",
+        "decision": "D2"
+      }
+    },
+    {
+      "id": "adoption",
+      "eyebrow": "Adoption",
+      "heading": "No freeze, no big bang",
+      "body": [
+        "We killed the plan to migrate every screen up front. Screens moved when a team touched them for real work, and coverage climbed every quarter without a freeze.",
+        "Weekly office hours kept the system from becoming a queue: 31 contributions merged, each one backed by a second team’s use case."
+      ],
+      "align": "right",
+      "figure": {
+        "image": "adoption",
+        "caption": "D4 · Coverage by team over six quarters, with office hours held every week.",
+        "decision": "D4"
+      }
+    }
+  ],
+  "compare": {
+    "before": "settings-before",
+    "after": "settings-after",
+    "label_before": "Before, 2021",
+    "label_after": "After, 2022",
+    "caption": "The Field ops settings screen rebuilt from 11 components: one blue, one button component, one row height.",
+    "decision": "D1",
+    "modes": [
+      "wipe",
+      "overlay"
+    ]
+  },
+  "gallery": [
+    {
+      "image": "button-spec",
+      "caption": "D1 · Button docs: every state drawn, and every colour a component token reading a semantic one.",
+      "decision": "D1"
+    },
+    {
+      "image": "dark-mode",
+      "caption": "D2 · Field ops in dark mode: the same 11 components and one more file of mappings.",
+      "decision": "D2"
+    },
+    {
+      "image": "cover",
+      "caption": "Three layers, primitives to components, with action-primary marked."
+    }
+  ],
+  "system": {
+    "heading": "The system at a glance",
+    "body": "The primitives behind the three themes, the type ramp, and the first five components every team adopted.",
+    "colors": [
+      {
+        "token": "blue-600",
+        "hex": "#2f5bd3",
+        "use": "action-primary in Field ops"
+      },
+      {
+        "token": "violet-600",
+        "hex": "#7a3fd1",
+        "use": "action-primary in Billing"
+      },
+      {
+        "token": "green-600",
+        "hex": "#0f8a6a",
+        "use": "Scheduling brand; buttons step to green-700"
+      },
+      {
+        "token": "neutral-50",
+        "hex": "#f7f8fb",
+        "use": "surface-base in light mode"
+      },
+      {
+        "token": "red-600",
+        "hex": "#c4321f",
+        "use": "status-critical"
+      }
+    ],
+    "type": [
+      {
+        "role": "Heading",
+        "spec": "Inter 600 20/28",
+        "text": "Crew settings"
+      },
+      {
+        "role": "Body",
+        "spec": "Inter 400 14/20",
+        "text": "Text customers when a technician is on the way."
+      },
+      {
+        "role": "Label",
+        "spec": "Inter 500 13/16",
+        "text": "Dispatch region"
+      }
+    ],
+    "components": [
+      "Button",
+      "Input",
+      "Card",
+      "Table",
+      "Toast"
+    ]
+  },
+  "artifacts": [
+    {
+      "id": "style-audit",
+      "kind": "bars",
+      "title": "What the audit found, and what v2 kept",
+      "caption": "Colour values, 212 → 48, are left off this scale.",
+      "data": {
+        "orientation": "horizontal",
+        "unit": "unique values",
+        "bars": [
+          {
+            "label": "Button styles",
+            "from": 37,
+            "value": 4,
+            "note": "4 variants"
+          },
+          {
+            "label": "Spacing values",
+            "from": 31,
+            "value": 10
+          },
+          {
+            "label": "Text styles",
+            "from": 23,
+            "value": 9
+          },
+          {
+            "label": "Shadows",
+            "from": 14,
+            "value": 3
+          },
+          {
+            "label": "Corner radii",
+            "from": 11,
+            "value": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "token-tiers",
+      "kind": "table",
+      "title": "Three tiers, one direction",
+      "caption": "Themes swap the middle column. Components read only the last one.",
+      "data": {
+        "head": [
+          "Primitive",
+          "Semantic",
+          "Component"
+        ],
+        "rows": [
+          [
+            "blue-600 #2f5bd3",
+            "action-primary",
+            "button-bg"
+          ],
+          [
+            "neutral-50 #f7f8fb",
+            "surface-base",
+            "card-bg"
+          ],
+          [
+            "neutral-600 #5b6475",
+            "text-muted",
+            "input-help"
+          ],
+          [
+            "red-600 #c4321f",
+            "status-critical",
+            "alert-border"
+          ]
+        ]
+      }
+    }
+  ],
+  "after_launch": [
+    {
+      "when": "+1 quarter",
+      "what": "All three products building new screens on the system",
+      "metric": "Coverage 41%"
+    },
+    {
+      "when": "+2 quarters",
+      "what": "v2: three brands and Field ops dark mode, all by swapping semantics",
+      "metric": "Colour values 212 → 48"
+    },
+    {
+      "when": "+4 quarters",
+      "what": "Most production screens migrated, none of them by a freeze",
+      "metric": "Coverage 78% · UI defects at QA −31%"
+    }
+  ],
+  "not_taken": [
+    "One brand for all three products. Each product was sold on its own and its colours carried real recognition, so we themed instead.",
+    "Tokens generated straight from the design files. The tooling was not reliable in 2021, so tokens lived in code and were reviewed like code.",
+    "A large dedicated system team. We stayed small, with part-time engineers, and grew contributions instead of headcount."
+  ],
+  "reflections": [
+    "I would put a front-end engineer on the system full-time from day one. Part-time ownership slowed the token pipeline by about a quarter.",
+    "Coverage was the right number for leadership, but office-hours attendance warned me earlier when a team was about to fork."
+  ],
+  "deeper": [
+    {
+      "title": "How the tokens are named",
+      "body": [
+        "Primitives are hue-step: blue-600, neutral-50. Six ramps of eight steps, 48 values in all.",
+        "Semantic tokens are role-variant: action-primary, surface-base, text-muted, status-critical. There are 32, and adding one needs a review.",
+        "Component tokens are component-part: button-bg, card-bg, alert-border. Only components read them."
+      ]
+    },
+    {
+      "title": "The contribution model",
+      "body": [
+        "Anyone could bring a pattern to Thursday office hours. If a second team needed it, the proposer and a system designer built it together; if not, it stayed in the product.",
+        "Every merge shipped with documentation, a design-file component and code for web, iOS and Android in the same release."
+      ]
+    },
+    {
+      "title": "How we measured it",
+      "body": [
+        "Colour values: unique hex and rgba values in the three codebases, at the audit and again at v2.",
+        "Coverage: production screens built only from system components, counted by a script each quarter and checked by hand for the 50 most visited screens.",
+        "UI defects: bugs our QA engineer tagged as visual or spacing issues, per release, for the two quarters after v2 against the two before."
+      ]
+    }
+  ],
+  "images": {
+    "cover": {
+      "w": 1200,
+      "h": 900,
+      "alt": "Isometric stack of three layers, colour primitives, semantic tokens and components, with action-primary marked."
+    },
+    "hero": {
+      "w": 2400,
+      "h": 1500,
+      "alt": "Exploded isometric of four layers, primitives to a settings screen, with one token chain from blue-600 to Save."
+    },
+    "settings-before": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Legacy settings screen with three blues, five button styles, uneven spacing and helper text at 2.4:1 contrast."
+    },
+    "settings-after": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "The same settings screen rebuilt from 11 components; an inspector shows Save reading tokens, not a hex value."
+    },
+    "tokens": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Token docs: six colour ramps of eight steps, a theme switcher for three products and a light and dark table."
+    },
+    "adoption": {
+      "w": 1920,
+      "h": 1280,
+      "alt": "Adoption dashboard: coverage by team rising from 22% to 78% over six quarters, office hours held every week."
+    },
+    "button-spec": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Button docs: anatomy with token names, four variants in four states, and the component tokens each one reads."
+    },
+    "dark-mode": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "The same Field ops settings screen in dark mode: same components and names, with action-primary now mapped to blue-400."
+    }
+  },
+  "seo": {
+    "description": "SaaS design-system case study, 2021–23: a three-tier token system for three products. Colour values 212 → 48, component coverage 22% → 78%."
+  },
+  "plates": [
+    {
+      "image": "hero",
+      "caption": "One token chain, blue-600 to the Save button"
+    },
+    {
+      "image": "tokens",
+      "caption": "Three brands on one component set"
+    }
+  ]
+}

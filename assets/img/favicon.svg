@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .paper{fill:#f9f6f1}.ink{fill:none;stroke:#1a1511}.dot{fill:#ec4f27}
+    @media (prefers-color-scheme:dark){.paper{fill:#0e1a2b}.ink{stroke:#e9eef5}.dot{fill:#fb794a}}
+  </style>
+  <rect class="paper" width="32" height="32" rx="4"/>
+  <rect class="ink" x="4" y="4" width="24" height="24" stroke-width="2.4"/>
+  <path class="ink" d="M4 20.5H28M16 20.5V28" stroke-width="1.6"/>
+  <circle class="dot" cx="22" cy="24.25" r="2.4"/>
+</svg>

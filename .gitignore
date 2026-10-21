@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+# made by the build (python3 tools/build.py), here and on GitHub
+/_site/
+/work/
+/sitemap.xml
+/robots.txt
+/llms.txt

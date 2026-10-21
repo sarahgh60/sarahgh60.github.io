@@ -1,0 +1,559 @@
+{
+  "schema": 1,
+  "slug": "virtual-care",
+  "sheet": "A-103",
+  "order": 3,
+  "title": "Virtual care that works for patients, caregivers and clinicians",
+  "title_html": "Virtual care that <em>works</em> for patients, caregivers and clinicians",
+  "hook": "A virtual-care platform rebuilt around patients over 60 — and the daughters, sons and clinicians around them.",
+  "dek": "Fourteen months on a virtual-care platform for patients over 60. Helpers got their own keys, joining became one tap, and intake started speaking plain English.",
+  "sector": "Healthcare · Telehealth",
+  "filters": [
+    "health"
+  ],
+  "industry": "Healthcare",
+  "era": "Software studio, 2020–24",
+  "years": "2023–24",
+  "year_start": 2023,
+  "year_end": 2024,
+  "role": "Senior UX designer · project lead",
+  "altitude": "hands-on",
+  "team": "Designers, a researcher, a PM, engineers and clinical advisors",
+  "duration": "14 months",
+  "platforms": [
+    "iOS",
+    "Android",
+    "Web",
+    "Clinician desktop"
+  ],
+  "stage": "aqua",
+  "keywords": [
+    "health",
+    "healthcare",
+    "telehealth",
+    "virtual care",
+    "patients",
+    "caregivers",
+    "clinicians",
+    "accessibility",
+    "WCAG",
+    "plain language"
+  ],
+  "register_line": "No-shows −18% · intake 11 → 4 min · SUS 64 → 83",
+  "metrics": [
+    {
+      "label": "No-shows, video visits",
+      "delta": "−18%",
+      "period": "6 months after launch vs the 6 before",
+      "canon": "health.noshows",
+      "dim": "6 mo vs 6 mo"
+    },
+    {
+      "label": "Median intake time",
+      "from": "11",
+      "to": "4 min",
+      "period": "First screen to submit, from analytics",
+      "canon": "health.intake"
+    },
+    {
+      "label": "Usability score (SUS), patients 60+",
+      "from": "64",
+      "to": "83",
+      "period": "Two rounds of 12 patients, on their own phones",
+      "canon": "health.sus"
+    }
+  ],
+  "tldr": [
+    "Older patients were the platform’s heaviest users, and every missed video visit cost a clinic slot.",
+    "I led design for delegated caregiver access, Today-first booking and one-tap joining with an audio fallback.",
+    "We killed a symptom-checker chatbot and gave that load to clinicians.",
+    "No-shows −18%, intake 11 → 4 min, SUS 64 → 83."
+  ],
+  "challenge": {
+    "inherited": "“My daughter books everything, so I just give her my password,” one patient told us in our first round of interviews.",
+    "body": "The platform served a network of family practices, and most of its video patients were over 60. Helpers signed in with their parents’ passwords, intake asked for the same history at every visit, and one in five video visits started late or not at all. Each workaround cost the clinic a visit and the patient some dignity."
+  },
+  "role_led": [
+    "Designed the patient app, caregiver access and the clinician request queue, end to end",
+    "Planned two usability rounds with our researcher: 12 patients aged 60+ each, on their own phones",
+    "Wrote the plain-language standard and rewrote intake with our clinical advisors",
+    "Mapped every flow to WCAG 2.2 AA and reviewed builds with engineering every sprint",
+    "Framed each decision for the client’s medical lead and product owner, trade-offs first"
+  ],
+  "role_team": [
+    "Our researcher recruited through the clinics and ran a two-week diary study with 15 caregivers",
+    "Another designer owned the clinician desktop and the shared component library",
+    "Our clinical advisors, a family physician and a nurse, wrote and checked every routing rule",
+    "Our engineers shipped iOS, Android and web from one set of components"
+  ],
+  "roster": [
+    {
+      "abbr": "DL",
+      "label": "Senior UX designer (me)"
+    },
+    {
+      "abbr": "PD",
+      "label": "Product designer"
+    },
+    {
+      "abbr": "UXR",
+      "label": "Researcher"
+    },
+    {
+      "abbr": "PM",
+      "label": "Product manager"
+    },
+    {
+      "abbr": "ENG",
+      "label": "Engineers"
+    },
+    {
+      "abbr": "CA",
+      "label": "Clinical advisors"
+    }
+  ],
+  "constraints": [
+    "Health-privacy law and clinic consent policy",
+    "Express, revocable consent for every helper",
+    "In-country data residency",
+    "WCAG 2.2 AA",
+    "No automated diagnosis",
+    "Older phones and rural connections"
+  ],
+  "principles": [
+    {
+      "id": "P1",
+      "title": "Never make someone prove who they are twice.",
+      "body": "A passkey or a one-time email link, a helper’s own sign-in, and intake that remembers. Every repeated question is a chance to give up."
+    },
+    {
+      "id": "P2",
+      "title": "The safest path is the obvious one.",
+      "body": "If video is wrong for the problem, the screen says so and offers the next safe step: in person, a nurse line or emergency services."
+    },
+    {
+      "id": "P3",
+      "title": "Plain language is a clinical requirement.",
+      "body": "A patient who misreads a question answers it wrongly. Every screen reads at grade 8 or lower (SMOG), and a clinician signs off the words."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "decision": "Delegated caregiver access, scoped, expiring and audited, replaces password-sharing",
+      "why": "In the diary study, 11 of 15 caregivers signed in with their parent’s password. The clinic could not tell who had agreed to what.",
+      "tradeoff": "Inviting a helper adds two screens, and every permission has to explain itself in one line.",
+      "risk": "Patients granting more than they mean to. Defaults are the narrowest useful set, and visit notes start off.",
+      "owner": "Me, with the PM and the client’s privacy officer",
+      "status": "shipped"
+    },
+    {
+      "id": "D2",
+      "decision": "Booking leads with Today / Tomorrow / This week, from lead-time data",
+      "why": "55% of visits were booked for today or tomorrow, yet booking opened on a month calendar.",
+      "tradeoff": "Patients planning weeks ahead take one extra tap to reach the calendar.",
+      "risk": "Days with no same-day capacity. An empty Today says so and offers a call to the clinic.",
+      "owner": "Me, with the PM and the clinic schedulers",
+      "status": "shipped"
+    },
+    {
+      "id": "D3",
+      "decision": "One-tap join with a device check and an audio-only fallback",
+      "why": "Most late or missed starts came from camera permissions and weak connections.",
+      "tradeoff": "Some visits begin without video, so the visit record notes the mode.",
+      "risk": "Audio being used where the clinician needs to see the patient. Clinicians can ask for video with one tap.",
+      "owner": "Me and the mobile engineering lead",
+      "status": "shipped"
+    },
+    {
+      "id": "D4",
+      "decision": "An appropriateness screen that routes plainly to in-person care, a nurse line or emergency services",
+      "why": "Some problems should never be a video visit. Patients needed to hear that while booking, before a doctor said it two minutes into a call.",
+      "tradeoff": "Everyone sees one more screen before booking, so it is one question with three plain answers.",
+      "risk": "Under-triage: someone with chest pain booking a video visit anyway. The emergency answer is a full-width call button, the request records the answer chosen, and the clinical advisors reviewed routed cases every month.",
+      "owner": "Clinical advisors for the content, me for the flow",
+      "status": "shipped"
+    },
+    {
+      "id": "D5",
+      "decision": "A clinician approval step for prescription renewals",
+      "why": "About a third of bookings were renewals. A two-minute review settled many of them, or chose the right kind of visit.",
+      "tradeoff": "Patients wait up to one working day for an answer instead of booking straight away.",
+      "risk": "Requests going stale. The queue shows waiting time, and anything older than a day rises to the top.",
+      "owner": "Me and our other designer, with the clinical advisors",
+      "status": "shipped"
+    },
+    {
+      "id": "D6",
+      "decision": "A symptom-checker chatbot for triage",
+      "why": "It was in the original brief. With no automated diagnosis allowed, it could only guess, and a wrong guess here is a safety incident, not a bug.",
+      "tradeoff": "We dropped a feature the client had already promised its board. Triage stayed with people.",
+      "risk": "Clinician workload. The approval step and the appropriateness screen took the load the chatbot was meant to carry.",
+      "owner": "Me, with the clinical advisors and the client’s medical lead",
+      "status": "killed"
+    }
+  ],
+  "process": [
+    {
+      "id": "caregivers",
+      "eyebrow": "Caregivers",
+      "heading": "Give the helper their own key",
+      "body": [
+        "Daughters and sons were already doing the booking and the joining, signed in with their parents’ passwords. So we made the helper a real person in the system: invited by name, with their own sign-in, a short list of things they can do, and an end date.",
+        "Both people see the same log of what the helper did. That one screen made the client’s privacy officer comfortable, and it was the screen patients tapped most in testing."
+      ],
+      "align": "left",
+      "figure": {
+        "image": "caregiver-access",
+        "caption": "D1 · Delegated access: invited by name, scoped, expiring, and logged for both people.",
+        "decision": "D1"
+      }
+    },
+    {
+      "id": "booking",
+      "eyebrow": "Booking",
+      "heading": "Lead with today",
+      "body": [
+        "Six months of booking data showed what the month calendar was hiding: most people wanted to be seen today or tomorrow, and almost nobody planned two weeks out.",
+        "Booking now opens on Today, with Tomorrow and This week one tap away, and each slot names the doctor and whether it is video or phone."
+      ],
+      "align": "right",
+      "figure": {
+        "artifact": "lead-time",
+        "caption": "D2 · Booking leads with Today / Tomorrow / This week.",
+        "decision": "D2"
+      }
+    },
+    {
+      "id": "joining",
+      "eyebrow": "Joining and routing",
+      "heading": "A way in when video fails",
+      "body": [
+        "The device check runs before the doctor is waiting. On a weak connection we start with audio and say so in one sentence, with the video button the biggest thing on the call screen.",
+        "Before booking, one question asks whether video is right at all. Chest pain goes to emergency services, uncertainty to a nurse line, and hands-on problems to an in-person visit."
+      ],
+      "align": "left",
+      "figure": {
+        "image": "join-and-route",
+        "caption": "D3 · Audio first on a weak connection; video stays one tap away.",
+        "decision": "D3"
+      }
+    },
+    {
+      "id": "accessibility",
+      "eyebrow": "Accessibility",
+      "heading": "Criteria that changed screens",
+      "body": [
+        "We treated WCAG 2.2 AA as design input from the first sketch. Five of the newer criteria changed screens outright: how people sign in, what intake asks, where help lives, how big targets are, and what the sticky Join bar may cover."
+      ],
+      "align": "right",
+      "figure": {
+        "artifact": "wcag-map",
+        "caption": "Each criterion maps to a decision we can point at on screen."
+      }
+    }
+  ],
+  "compare": {
+    "before": "intake-before",
+    "after": "intake-after",
+    "label_before": "Before, 2023",
+    "label_after": "After, 2024",
+    "caption": "Intake asks what changed and confirms the medicines on file. SMOG 15 → 8, median 11 → 4 min."
+  },
+  "gallery": [
+    {
+      "image": "helper-setup",
+      "caption": "D1 · Lena sets up her own key from a text; she sees what she can do before she signs in.",
+      "decision": "D1"
+    },
+    {
+      "image": "visit-summary",
+      "caption": "D1 · After the visit: plain words for Marguerite, renewals sent to her pharmacy, notes kept from her helper.",
+      "decision": "D1"
+    },
+    {
+      "image": "clinician-day",
+      "caption": "D3 · The clinician’s day: every visit shows its mode, and video is one tap away when audio isn’t enough.",
+      "decision": "D3"
+    },
+    {
+      "image": "cover",
+      "caption": "Join visit, four minutes out, on the patient’s phone."
+    }
+  ],
+  "system": {
+    "heading": "A care kit for older eyes and unsteady hands",
+    "body": "One accent, an amber that routes without alarming, and type that never drops below 19 px in the patient app.",
+    "colors": [
+      {
+        "token": "care-primary",
+        "hex": "#0b6e78",
+        "use": "Primary actions, Join, links · 5.97 : 1 with white"
+      },
+      {
+        "token": "surface",
+        "hex": "#fbfaf7",
+        "use": "Warm off-white background, less glare than pure white"
+      },
+      {
+        "token": "urgent-routing",
+        "hex": "#8a4b00",
+        "use": "Routing to emergency services, a nurse line or in person · amber, never alarm red"
+      },
+      {
+        "token": "ink",
+        "hex": "#15191c",
+        "use": "Body text · 16.9 : 1 on surface"
+      }
+    ],
+    "type": [
+      {
+        "role": "Heading",
+        "spec": "Atkinson Hyperlegible 700, 28/34",
+        "text": "Good morning, Marguerite"
+      },
+      {
+        "role": "Body",
+        "spec": "Atkinson Hyperlegible 400, 19/28 minimum",
+        "text": "Medicines we have on file for you"
+      },
+      {
+        "role": "Button",
+        "spec": "Atkinson Hyperlegible 700, 20/24 · 56 px target",
+        "text": "Join visit"
+      }
+    ],
+    "components": [
+      "Join bar",
+      "Permission toggle row",
+      "Consent card",
+      "Help button"
+    ]
+  },
+  "artifacts": [
+    {
+      "id": "lead-time",
+      "kind": "bars",
+      "title": "Days between request and visit",
+      "caption": "Days between request and visit. 55% want today or tomorrow.",
+      "data": {
+        "orientation": "vertical",
+        "unit": "% of requests",
+        "x_label": "Days from request to visit",
+        "bars": [
+          {
+            "label": "0",
+            "value": 31,
+            "highlight": true,
+            "note": "Today"
+          },
+          {
+            "label": "1",
+            "value": 24,
+            "highlight": true,
+            "note": "Tomorrow"
+          },
+          {
+            "label": "2",
+            "value": 11
+          },
+          {
+            "label": "3",
+            "value": 8
+          },
+          {
+            "label": "4",
+            "value": 6
+          },
+          {
+            "label": "5",
+            "value": 4
+          },
+          {
+            "label": "6",
+            "value": 3
+          },
+          {
+            "label": "7",
+            "value": 4
+          },
+          {
+            "label": "8",
+            "value": 2
+          },
+          {
+            "label": "9",
+            "value": 2
+          },
+          {
+            "label": "10",
+            "value": 1
+          },
+          {
+            "label": "11",
+            "value": 1
+          },
+          {
+            "label": "12",
+            "value": 1
+          },
+          {
+            "label": "13",
+            "value": 1
+          },
+          {
+            "label": "14",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "wcag-map",
+      "kind": "table",
+      "title": "WCAG 2.2 criteria mapped to design decisions",
+      "caption": "Five criteria that changed what we drew.",
+      "data": {
+        "head": [
+          "WCAG 2.2 criterion",
+          "Design decision"
+        ],
+        "rows": [
+          [
+            "3.3.8 Accessible Authentication (Minimum)",
+            "Passkey or a one-time email link; no puzzles, no memorized passwords"
+          ],
+          [
+            "3.3.7 Redundant Entry",
+            "Intake prefilled from the profile and last visit; confirm instead of retype"
+          ],
+          [
+            "3.2.6 Consistent Help",
+            "“Call the clinic” in the same place on every screen"
+          ],
+          [
+            "2.5.8 Target Size (Minimum)",
+            "48px targets throughout; 56px for Join"
+          ],
+          [
+            "2.4.11 Focus Not Obscured (Minimum)",
+            "The sticky Join bar never covers a focused field (scroll padding)"
+          ]
+        ]
+      }
+    }
+  ],
+  "after_launch": [
+    {
+      "when": "+2 weeks",
+      "what": "Join works across iOS, Android and web; about one visit in nine starts on audio",
+      "metric": "Join success 97%"
+    },
+    {
+      "when": "+6 weeks",
+      "what": "Helpers invited by name instead of borrowing passwords",
+      "metric": "Caregiver-linked 3% → 12%"
+    },
+    {
+      "when": "+6 months",
+      "what": "Fewer missed video visits; caregiver-linked accounts reach 21%",
+      "metric": "No-shows −18%"
+    }
+  ],
+  "not_taken": [
+    "One shared login with a PIN to switch between patient and helper. Faster to build, but consent and the audit log would have been fiction.",
+    "A smarter month calendar. The lead-time data said people think in days, not dates.",
+    "An SMS-only join for older phones. We kept text reminders and sent everyone to the same one-tap join."
+  ],
+  "reflections": [
+    "Plain language took more clinical review time than any single screen. Next time I would plan for it from the first week instead of treating it as copy polish.",
+    "Remote sessions on people’s own phones and Wi-Fi found more problems than any lab session. Most of what we fixed in joining came from them."
+  ],
+  "deeper": [
+    {
+      "title": "How helper consent works",
+      "body": [
+        "The patient invites a helper by name and mobile number. The helper gets a text with a link and sets up their own sign-in, a passkey or a one-time email link, never the patient’s password.",
+        "Each permission is its own switch with a one-line explanation, and visit notes start off. Access ends on a date the patient picks, 90 days by default, and both people get a reminder a week before.",
+        "Clinicians see who acted: “Booked by Lena O. for Marguerite O.” That line, and the shared log, is what the privacy impact assessment signed off on."
+      ]
+    },
+    {
+      "title": "The appropriateness screen",
+      "body": [
+        "One question before booking: is a video visit right for this? Three plain answers, written and reviewed by our clinical advisors: chest pain or trouble breathing, call emergency services now; not sure, call the nurse line; needs a hands-on exam, book in person.",
+        "Urgent routing uses amber, never alarm red: in testing, red read as an error the patient had made. The urgency is in the words and the size: the emergency answer is a full-width “Call emergency services” button."
+      ]
+    },
+    {
+      "title": "How we measured it",
+      "body": [
+        "No-shows: video visits in the six months after launch against the six months before, same clinics.",
+        "Intake time: median from the first intake screen to submit, from product analytics. SUS: two rounds of 12 patients aged 60 and over, tested on their own phones."
+      ]
+    }
+  ],
+  "privacy_note": "Names and details changed to protect patient privacy.",
+  "images": {
+    "cover": {
+      "w": 1200,
+      "h": 900,
+      "alt": "Patient phone on Join visit with Dr. Priya Anand starting in 4 min, beside the edge of the clinician tablet."
+    },
+    "hero": {
+      "w": 2400,
+      "h": 1500,
+      "alt": "Patient booking leads with Today, Tomorrow, This week; clinician tablet shows a prescription renewal to approve."
+    },
+    "caregiver-access": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Three phones: inviting a daughter, her scoped permissions with an access end date, and a log of what she did."
+    },
+    "intake-before": {
+      "w": 1600,
+      "h": 2000,
+      "alt": "Old intake asks about comorbidities and pharmacotherapy in small grey text, with a long checklist; SMOG 15."
+    },
+    "intake-after": {
+      "w": 1600,
+      "h": 2000,
+      "alt": "New intake asks what changed and lists two medicines on file with Still taking, Stopped, Changed; SMOG 8."
+    },
+    "join-and-route": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Device check starts on audio over a weak connection, an audio visit offers Turn on video, and a routing screen for urgent problems."
+    },
+    "helper-setup": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "The helper’s side: a text invite, setting up her own passkey with the scope shown first, and a home screen that says who she helps."
+    },
+    "visit-summary": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "After the visit: a plain-language summary, two medicines renewed and sent to the pharmacy, and the helper’s view with notes kept private."
+    },
+    "clinician-day": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Clinician desktop for the day: visits by mode, a request moved to in person, and the next patient ready on audio with her helper."
+    }
+  },
+  "seo": {
+    "title": "Virtual care for patients 60+ — Sara Gholamali Poor",
+    "description": "Healthcare case study, 2023–24: a virtual-care platform redesigned for patients over 60, the family members who help them, and their clinicians."
+  },
+  "plates": [
+    {
+      "image": "hero",
+      "caption": "Today-first booking and the approval queue"
+    },
+    {
+      "image": "caregiver-access",
+      "caption": "Caregiver access: named, scoped, expiring"
+    }
+  ],
+  "constraints_title": "Privacy and access requirements"
+}

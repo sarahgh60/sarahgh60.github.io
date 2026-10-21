@@ -1,0 +1,511 @@
+{
+  "schema": 1,
+  "slug": "mobile-commerce",
+  "sheet": "A-105",
+  "order": 5,
+  "title": "Mobile checkout and merchant tools",
+  "title_html": "Mobile checkout and merchant <em>tools</em>",
+  "hook": "Checkout and payouts redesigned for one thumb, small screens and slow networks.",
+  "dek": "Shoppers gave up on a four-page desktop checkout, and merchants couldn’t tell where their money was. I redesigned both for one thumb and a 3G connection.",
+  "sector": "Mobile commerce · Payments",
+  "filters": [
+    "mobile",
+    "commerce"
+  ],
+  "industry": "Mobile commerce",
+  "era": "Mobile-commerce SaaS company, 2017–20",
+  "years": "2018–20",
+  "year_start": 2018,
+  "year_end": 2020,
+  "role": "UI/UX designer",
+  "altitude": "hands-on",
+  "team": "Designers, a PM and engineers",
+  "duration": "24 months (four releases)",
+  "platforms": [
+    "Android",
+    "iOS",
+    "Mobile web",
+    "Merchant web"
+  ],
+  "stage": "sand",
+  "keywords": [
+    "mobile",
+    "checkout",
+    "payments",
+    "payouts",
+    "merchants",
+    "Android",
+    "iOS",
+    "3G",
+    "offline",
+    "commerce",
+    "usability testing"
+  ],
+  "register_line": "Checkout 61% → 72% · payout setup 58% → 74%",
+  "metrics": [
+    {
+      "label": "Mobile checkout completion",
+      "from": "61%",
+      "to": "72%",
+      "period": "Mobile shoppers who start checkout, 2018 vs 2020",
+      "canon": "mc.checkout"
+    },
+    {
+      "label": "Payout setup completion",
+      "from": "58%",
+      "to": "74%",
+      "period": "New merchants, within 14 days of sign-up",
+      "canon": "mc.payout"
+    },
+    {
+      "label": "“Where’s my money?” tickets",
+      "delta": "−22%",
+      "period": "Monthly average, 3 months before vs after",
+      "canon": "mc.tickets",
+      "dim": "3 mo vs 3 mo"
+    }
+  ],
+  "tldr": [
+    "Checkout lost four in ten mobile shoppers, and payout questions were our biggest support cost.",
+    "I designed a one-page checkout with sections that fold away, and a payout timeline that dates every step.",
+    "Every screen was built for low-end Android on 3G first.",
+    "Checkout completion rose from 61% to 72%, payout setup from 58% to 74%; money tickets fell 22%."
+  ],
+  "challenge": {
+    "inherited": "“I paid on Monday and it’s Thursday, so where is my money?” was the most common line in our support inbox.",
+    "body": "Most of our shoppers were on mid-range Android phones over mobile data, facing a four-page checkout built for desktop. The keyboard hid the Continue button on two of the four pages, and every page was a fresh round trip. On the merchant side, payouts went quiet for up to five days."
+  },
+  "role_led": [
+    "Ran 14 checkout sessions with shoppers on their own phones and 9 merchant interviews",
+    "Designed the one-page checkout, the payout setup flow and the payout timeline",
+    "Prototyped every release and usability-tested it before and after launch",
+    "Wrote the payout status messages and help articles with the support lead",
+    "Set up ticket tagging by reason, so we could measure what changed"
+  ],
+  "role_team": [
+    "Another designer owned the merchant web dashboard and our shared component kit",
+    "The PM set the scope of each release and ran the A/B rollout for checkout",
+    "Our engineers built Android, iOS, mobile web and the payout events behind the timeline"
+  ],
+  "roster": [
+    {
+      "abbr": "PD",
+      "label": "Product designers"
+    },
+    {
+      "abbr": "PM",
+      "label": "Product manager"
+    },
+    {
+      "abbr": "ENG",
+      "label": "Engineers"
+    }
+  ],
+  "constraints": [
+    "Low-end Android phones with 1–2 GB of RAM",
+    "3G networks and dropped connections",
+    "Identity checks before a merchant’s first payout",
+    "One design for Android, iOS and mobile web",
+    "No new support headcount"
+  ],
+  "principles": [
+    {
+      "id": "P1",
+      "title": "One thumb, one decision per screen.",
+      "body": "Primary actions sit in the lower half of the screen, and each section asks for one thing. Two-handed steps get redesigned."
+    },
+    {
+      "id": "P2",
+      "title": "Tell merchants where their money is before they ask.",
+      "body": "Every payout carries a status, a date and a next step. A silent wait turns into a support ticket."
+    },
+    {
+      "id": "P3",
+      "title": "Design for the slowest network first.",
+      "body": "We tested on a five-year-old Android over throttled 3G. Every action survives a dropped connection, and nothing a merchant enters is lost."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "decision": "A single-page checkout with collapsible sections.",
+      "why": "Each page change on 3G cost two to six seconds and another chance to quit. One page with Contact, Delivery and Payment sections keeps the total and the Pay button in reach the whole time, even with the keyboard open.",
+      "tradeoff": "A longer page and more state to manage; the order summary moved into a strip that expands at the top.",
+      "risk": "Shoppers missing a required field above the fold. Watched through errors per section; the first unfinished section always opens and scrolls into view.",
+      "owner": "Me, with the PM and the mobile web lead",
+      "status": "shipped"
+    },
+    {
+      "id": "D2",
+      "decision": "A payout status timeline.",
+      "why": "Merchants weren’t worried about fees; they were worried about silence. Three dated steps — Order paid, In transit, Deposited — answer the question before it becomes a ticket.",
+      "tradeoff": "Payments had to expose settlement events we had never shown, and every date had to stay honest when a bank was slow.",
+      "risk": "A missed date erodes trust faster than no date. When a deposit slips, the step turns to Delayed, with the new date and the reason.",
+      "owner": "Me, with the payments engineers and the support lead",
+      "status": "shipped"
+    },
+    {
+      "id": "D3",
+      "decision": "In-app chat support.",
+      "why": "Merchants asked for chat, but most chats would have been the same question: where is my money? Answering it on the screen was cheaper than answering it in a queue.",
+      "tradeoff": "Replaced by the status timeline and twelve short help articles linked from each status; merchants with a real problem still had email.",
+      "risk": "Merchants feeling they couldn’t reach a person. Watched through satisfaction scores on payout tickets and email volume; neither got worse.",
+      "owner": "The PM and me, with the support lead",
+      "status": "descoped"
+    },
+    {
+      "id": "D4",
+      "decision": "Offline-tolerant states: skeletons, retry and queued actions.",
+      "why": "On 3G a blank screen looked like a crash, and a failed upload looked like a lost payout. Skeletons show the shape of what’s coming; actions taken on a weak signal queue and send when it returns.",
+      "tradeoff": "Every screen needed three extra states, and a rule for what may never queue: paying always waits for a live connection, and says so.",
+      "risk": "Double submissions. Every queued action carries a one-time key, and the Pay button locks with a visible Processing state.",
+      "owner": "Me, with the Android lead",
+      "status": "shipped"
+    }
+  ],
+  "process": [
+    {
+      "id": "checkout",
+      "eyebrow": "Checkout",
+      "heading": "Four pages became one",
+      "body": [
+        "I sat with 14 shoppers on their own phones, most of them mid-range Android on mobile data. Every page of the old checkout was a fresh load, and on two of the four the keyboard covered Continue.",
+        "The new checkout is one page: Contact, Delivery and Payment as sections that fold to a single line once they’re done, with the total and the Pay button always in reach."
+      ],
+      "align": "left",
+      "figure": {
+        "artifact": "checkout-3g",
+        "caption": "D1 · Same cart, same five-year-old phone on throttled 3G: four page loads became one, and 14 taps became 5.",
+        "decision": "D1"
+      }
+    },
+    {
+      "id": "payouts",
+      "eyebrow": "Payout setup",
+      "heading": "Four steps to the first Friday",
+      "body": [
+        "Four in ten new merchants never finished payout setup. The old form asked for bank and identity details without saying why, and one failed upload meant starting again.",
+        "I rebuilt it as four screens, each with one job and a plain sentence on why we ask. On a weak connection the ID photo is saved on the phone and sends itself later."
+      ],
+      "align": "right",
+      "figure": {
+        "image": "payout-flow",
+        "caption": "D4 · Four steps to the first payout. On a weak signal the ID photo waits on the phone and sends itself later.",
+        "decision": "D4"
+      }
+    },
+    {
+      "id": "timeline",
+      "eyebrow": "Payout timeline",
+      "heading": "Where’s my money, answered",
+      "body": [
+        "“Where’s my money?” was our largest support reason. Payouts went quiet for up to five days, so merchants assumed the worst.",
+        "Every payout now moves through three dated steps, in the app and on the merchant web. When a bank is slow, the step says Delayed, with the new date and the reason."
+      ],
+      "align": "left",
+      "figure": {
+        "image": "merchant-web",
+        "caption": "D2 · The same timeline on the merchant web: each order shows which payout it’s in and when it lands.",
+        "decision": "D2"
+      }
+    },
+    {
+      "id": "support",
+      "eyebrow": "Support",
+      "heading": "The chat we didn’t build",
+      "body": [
+        "Merchants asked for in-app chat, and it was on the roadmap. But most of those chats would have asked the question the timeline now answers on the screen.",
+        "We descoped chat, linked a short help article from every payout status and tagged tickets by reason, so we could see exactly what changed."
+      ],
+      "align": "right",
+      "figure": {
+        "artifact": "ticket-reasons",
+        "caption": "D3 · Support contacts by reason, before and after the timeline. Money questions fell 22%; refunds and log-ins didn’t move.",
+        "decision": "D3"
+      }
+    }
+  ],
+  "compare": {
+    "before": "checkout-before",
+    "after": "checkout-after",
+    "label_before": "Before, 2018",
+    "label_after": "After, 2019",
+    "caption": "D1 · Same phone, same cart. On the four-page form Continue hid under the keyboard; on one page, Pay rides above it.",
+    "decision": "D1"
+  },
+  "gallery": [
+    {
+      "image": "slow-states",
+      "caption": "D4 · Skeletons while it loads, edits that queue with a word, and a Pay button that never queues.",
+      "decision": "D4"
+    },
+    {
+      "image": "delayed-payout",
+      "caption": "D2 · When a bank is slow: told first, one article for the status, and the new date on the timeline.",
+      "decision": "D2"
+    },
+    {
+      "image": "order-payout",
+      "caption": "D2 · Every order shows the payout it lands in, and every payout shows its math.",
+      "decision": "D2"
+    }
+  ],
+  "system": {
+    "heading": "A small mobile system, 2019",
+    "body": "One Material-based kit shared by Android, iOS and mobile web: a single accent, status colours that always come with a word, and states for slow networks.",
+    "colors": [
+      {
+        "token": "accent",
+        "hex": "#3949ab",
+        "use": "Primary actions, app bar, current step"
+      },
+      {
+        "token": "accent-dark",
+        "hex": "#283593",
+        "use": "Status bar and text on tinted surfaces"
+      },
+      {
+        "token": "success",
+        "hex": "#2e7d32",
+        "use": "Completed steps and Paid"
+      },
+      {
+        "token": "warning",
+        "hex": "#8a5300",
+        "use": "Delayed and Queued, always with a word"
+      },
+      {
+        "token": "surface",
+        "hex": "#f5f5f5",
+        "use": "App background behind white cards"
+      }
+    ],
+    "type": [
+      {
+        "role": "App bar",
+        "spec": "Roboto 500 · 20/28",
+        "text": "Checkout"
+      },
+      {
+        "role": "Amount",
+        "spec": "Roboto 400 · 38/46",
+        "text": "$1,284.50"
+      },
+      {
+        "role": "Body",
+        "spec": "Roboto 400 · 14/20",
+        "text": "We pay you every Friday for orders paid by Wednesday."
+      },
+      {
+        "role": "Button",
+        "spec": "Roboto 500 · 14, caps",
+        "text": "Pay $46.80"
+      }
+    ],
+    "components": [
+      "Collapsible checkout section",
+      "Sticky pay bar",
+      "Payout timeline",
+      "Queued-action snackbar",
+      "Skeleton row"
+    ]
+  },
+  "artifacts": [
+    {
+      "id": "checkout-3g",
+      "kind": "table",
+      "title": "Checkout on a throttled 3G connection",
+      "caption": "Our test bench: a five-year-old Android phone with 1 GB of RAM on a 3G profile with 300 ms of added latency, the same one-item cart and a returning shopper.",
+      "data": {
+        "head": [
+          "Measure",
+          "Four pages, 2018",
+          "One page, 2019"
+        ],
+        "rows": [
+          [
+            "Page loads to pay",
+            "4",
+            "1"
+          ],
+          [
+            "Time to a usable screen",
+            "6.8 s",
+            "2.4 s"
+          ],
+          [
+            "Taps to pay",
+            "14",
+            "5"
+          ],
+          [
+            "Fields typed",
+            "9",
+            "1 (CVC)"
+          ],
+          [
+            "Pay visible with the keyboard open",
+            "No",
+            "Yes"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ticket-reasons",
+      "kind": "bars",
+      "title": "Support contacts by reason · before vs after",
+      "caption": "Monthly average, three months before and three months after the payout timeline shipped. “Where’s my money?” fell 22%; refunds and log-ins barely moved, so the drop wasn’t seasonal.",
+      "data": {
+        "orientation": "horizontal",
+        "unit": "contacts / month",
+        "bars": [
+          {
+            "label": "“Where’s my money?”",
+            "from": 1240,
+            "value": 967,
+            "note": "−22%",
+            "highlight": true
+          },
+          {
+            "label": "Payout setup and ID",
+            "from": 540,
+            "value": 410,
+            "note": "−24%"
+          },
+          {
+            "label": "Payment failed",
+            "from": 360,
+            "value": 300,
+            "note": "−17%"
+          },
+          {
+            "label": "Refunds and disputes",
+            "from": 310,
+            "value": 304
+          },
+          {
+            "label": "Log-in and account",
+            "from": 260,
+            "value": 262
+          },
+          {
+            "label": "Everything else",
+            "from": 190,
+            "value": 186
+          }
+        ]
+      }
+    }
+  ],
+  "after_launch": [
+    {
+      "when": "+2 weeks",
+      "what": "One-page checkout live for every mobile shopper after a two-week A/B test",
+      "metric": "Checkout completion 61% → 68%"
+    },
+    {
+      "when": "+3 months",
+      "what": "Payout setup in four steps, with ID photos that queue on a weak signal",
+      "metric": "Payout setup 58% → 74%"
+    },
+    {
+      "when": "+6 months",
+      "what": "Payout timeline in the app and on the merchant web",
+      "metric": "Checkout 72% · money tickets −22%"
+    }
+  ],
+  "not_taken": [
+    "A native-only checkout. Faster to polish, but a third of our shoppers arrived through links shared in social posts and never installed an app.",
+    "In-app chat for payout questions. It would have answered the same question one merchant at a time, in a queue, instead of once on the screen.",
+    "The payout schedule on a settings page. Accurate, but nobody opens settings until something has already gone wrong."
+  ],
+  "reflections": [
+    "Testing on a five-year-old Android over a throttled connection taught me more than any design review. I still ask for the slowest phone in the room before the newest one.",
+    "I underestimated how much of payouts was copy. The timeline only cut tickets once every status had a date and a plain sentence; support and I rewrote the delay messages three times."
+  ],
+  "deeper": [
+    {
+      "title": "How we tested on slow networks",
+      "body": [
+        "Every build ran on a bench of three phones: a five-year-old Android with 1 GB of RAM, a mid-range Android and an older iPhone, all on a 3G profile with 300 ms of added latency.",
+        "A screen passed only if it was usable in under three seconds and every action survived pulling the connection mid-tap."
+      ]
+    },
+    {
+      "title": "Payout statuses and their words",
+      "body": [
+        "Five statuses, each with a date and one sentence: Order paid, In transit, Deposited, Delayed and On hold. Delayed always names the new date and the reason; On hold always names what the merchant can do.",
+        "Support wrote the first drafts with me, so the words in the app matched the words in their replies."
+      ]
+    },
+    {
+      "title": "What can wait for a signal, and what can’t",
+      "body": [
+        "Cart edits, saved items and payout setup steps queue on a weak signal and send when it returns. Paying never queues: the Pay button waits for a live connection and says so.",
+        "Every queued action carries a one-time key, so a retry can never charge or submit twice."
+      ]
+    }
+  ],
+  "privacy_note": "Merchant and shopper names changed to protect their privacy.",
+  "images": {
+    "cover": {
+      "w": 1200,
+      "h": 900,
+      "alt": "Three overlapping Android phones: a one-page checkout, a payout setup step and a wallet with a dated payout timeline."
+    },
+    "hero": {
+      "w": 2400,
+      "h": 1500,
+      "alt": "Checkout with Pay $46.80, a plain-language bank details step, and a wallet whose payout timeline puts a date on every step."
+    },
+    "checkout-before": {
+      "w": 1600,
+      "h": 2000,
+      "alt": "Before: a four-page checkout built for desktop. On the shipping page the keyboard covers the Continue button."
+    },
+    "checkout-after": {
+      "w": 1600,
+      "h": 2000,
+      "alt": "After: one page, finished sections folded to a line, a saved card that needs only the CVC, and Pay above the keyboard."
+    },
+    "payout-flow": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Payout setup in four screens: why, bank details with help, an ID photo that queues on a weak signal, and the first payout date."
+    },
+    "merchant-web": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Merchant web orders table beside a “Where’s my money?” panel: order paid, in transit for two days, deposited Friday."
+    },
+    "slow-states": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Slow-network states on three Android phones: skeleton rows while orders load, an edit queued offline, and Pay waiting for a signal."
+    },
+    "delayed-payout": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "A delayed payout: a lock-screen notice with the new date, a help article for that status, and the timeline marked Delayed."
+    },
+    "order-payout": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "An order linked to the payout it belongs to, and the payout screen showing orders, card fees and the amount that lands."
+    }
+  },
+  "seo": {
+    "description": "Case study, mobile commerce 2018–20: a one-page mobile checkout, plain-language payout setup and a payout timeline built for low-end Android and 3G."
+  },
+  "plates": [
+    {
+      "image": "hero",
+      "caption": "Checkout, payout setup and a dated timeline"
+    },
+    {
+      "image": "merchant-web",
+      "caption": "“Where’s my money?” answered on the web"
+    }
+  ]
+}

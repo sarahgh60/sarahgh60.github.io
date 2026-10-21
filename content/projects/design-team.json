@@ -1,0 +1,1090 @@
+{
+  "schema": 1,
+  "slug": "design-team",
+  "sheet": "A-101",
+  "order": 1,
+  "title": "Building a design team for four Shopify apps",
+  "title_html": "Building a design <em>team</em> for four Shopify apps",
+  "hook": "From a ticket queue stretched across four apps to a team that ships one merchant experience.",
+  "dek": "In twelve months I grew design from a ticket queue into a team with pods, rituals, a budget and a monthly page leadership reads.",
+  "sector": "Leadership · Commerce",
+  "filters": [
+    "leadership",
+    "commerce"
+  ],
+  "industry": "Commerce software",
+  "era": "Commerce-software company, 2025–now",
+  "years": "2025–26",
+  "year_start": 2025,
+  "year_end": 2026,
+  "role": "Hands-on design lead",
+  "altitude": "player-coach",
+  "team": "Product designers and a research & content designer, partnering with the PMs and engineering leads",
+  "duration": "12 months",
+  "platforms": [
+    "Shopify admin (embedded apps)",
+    "Storefront extensions",
+    "Email"
+  ],
+  "stage": "bone",
+  "keywords": [
+    "leadership",
+    "management",
+    "hiring",
+    "budget",
+    "reporting",
+    "HEART",
+    "design ops",
+    "rituals",
+    "career ladder",
+    "team",
+    "Shopify"
+  ],
+  "register_line": "Handoff −35% · budget within 3% · no one has left",
+  "metrics": [
+    {
+      "label": "Design-to-dev handoff",
+      "delta": "−35%",
+      "period": "Design done to in development",
+      "canon": "ops.handoff",
+      "dim": "handoff time"
+    },
+    {
+      "label": "Median time-to-hire",
+      "delta": "38 days",
+      "period": "Application to signed offer",
+      "canon": "hiring.tth",
+      "dim": "per hire"
+    },
+    {
+      "label": "Design budget",
+      "delta": "within 3%",
+      "period": "Of plan, FY 2025–26",
+      "canon": "budget.variance",
+      "dim": "plan vs actual"
+    }
+  ],
+  "tldr": [
+    "The ask: one design team for four apps, with numbers leadership could read.",
+    "I reorganized design into three pods and a research seat, hired on one written rubric and started crit.",
+    "Every month I gather a HEART scorecard per app and send leadership one page.",
+    "A year on: no one has left, handoff −35%, budget within 3%."
+  ],
+  "challenge": {
+    "inherited": "“I file the ticket and hope design has a free afternoon,” a PM told me in my first week.",
+    "body": "Design was a small, stretched desk taking tickets from four product teams, with no shared library, no crit and no numbers leadership could read. Every PM had a direct line into a designer’s calendar, and work was judged by how fast it shipped. Leadership saw design as a cost line, so every headcount ask started from zero."
+  },
+  "role_led": [
+    "Designed the team: pods, roles, rituals and a four-level career ladder",
+    "Hired designers with scorecards, a paid exercise and one written rubric",
+    "Owned the design budget and planned capacity in designer-weeks",
+    "Gathered the monthly HEART scorecard and wrote the leadership brief",
+    "Kept most of my week on hands-on design and review"
+  ],
+  "role_team": [
+    "Designers owned their pod’s outcomes, from discovery to design QA",
+    "Senior designers took over running crit by month nine",
+    "Product and engineering leads co-wrote the definition of ready and the quarterly plan"
+  ],
+  "roster": [
+    {
+      "abbr": "DL",
+      "label": "Design lead (me)"
+    },
+    {
+      "abbr": "PD",
+      "label": "Product designers"
+    },
+    {
+      "abbr": "UXR",
+      "label": "Research & content designer"
+    },
+    {
+      "abbr": "PM",
+      "label": "Product managers"
+    },
+    {
+      "abbr": "ENG",
+      "label": "Engineering leads"
+    }
+  ],
+  "constraints": [
+    "Four apps, four roadmaps, one design budget",
+    "Built-for-Shopify requirements in every app",
+    "Headcount released in stages",
+    "Hybrid team: Vancouver office plus remote",
+    "No recruiter and no design-ops role"
+  ],
+  "principles": [
+    {
+      "id": "P1",
+      "title": "Pods own outcomes; crit keeps us one team.",
+      "body": "Each pod answers for its app’s numbers. A weekly crit and one shared library stop four apps drifting into four products."
+    },
+    {
+      "id": "P2",
+      "title": "Hire for judgement; train for tools.",
+      "body": "Scorecards before job posts, one written rubric for every panel, and a paid exercise that respects a candidate’s time."
+    },
+    {
+      "id": "P3",
+      "title": "Leadership gets one page, every month.",
+      "body": "Shipped, moved, at risk, asks. If leadership has to ask what design did last month, the page has already failed."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "decision": "Organize design by pods.",
+      "why": "Splitting designers by app made four silos and left no cover for a holiday. Pods group work by merchant problem: alerts and pre-orders, memberships and promotions, the AI assistant.",
+      "tradeoff": "Designers trade some depth in a single app for breadth, and PMs share a pod’s time.",
+      "risk": "Pod priorities clashing. Checked in the monthly capacity review; rebalanced twice in the year.",
+      "owner": "Me, with the PMs",
+      "status": "shipped"
+    },
+    {
+      "id": "D2",
+      "decision": "A paid three-hour exercise instead of an unpaid take-home.",
+      "why": "Unpaid take-homes took candidates eight to twelve hours and quietly filtered out parents and people with second jobs. A paid, timed exercise on a real problem showed judgement in three.",
+      "tradeoff": "CA$300 per candidate and more of my calendar; fewer people reach the exercise stage.",
+      "risk": "Inconsistent scoring. Every panellist scored the same written rubric, alone, before the debrief.",
+      "owner": "Me, with people operations and a senior designer",
+      "status": "shipped"
+    },
+    {
+      "id": "D3",
+      "decision": "A dedicated design-ops hire.",
+      "why": "Someone had to own the library, tooling and rituals, but a full-time ops role in a small team would have cost a designer seat on the product.",
+      "tradeoff": "Ops became a rotating seat, one designer per quarter at 20% time, and the headcount went to a product designer.",
+      "risk": "Library and tooling work slipping behind delivery. Watched through office-hours attendance and the definition of ready.",
+      "owner": "Me",
+      "status": "killed"
+    },
+    {
+      "id": "D4",
+      "decision": "A HEART scorecard per app, every month.",
+      "why": "Leadership didn’t need to know how many screens we made. They needed to know whether merchants set up, came back and succeeded.",
+      "tradeoff": "Slower to stand up: analytics events in four apps and a standing panel of 40 merchants. The first three briefs ran without merchant-panel numbers.",
+      "risk": "Numbers nobody acts on. Any signal that changes no decision for two quarters is dropped.",
+      "owner": "Me, with the PMs and our data analyst",
+      "status": "shipped"
+    }
+  ],
+  "process": [
+    {
+      "id": "pods",
+      "eyebrow": "Team design",
+      "heading": "Three pods for four apps",
+      "body": [
+        "My first month was a listening tour: every PM, every engineering lead and twenty merchant calls. Four apps were drifting into four products, and nobody could take a holiday.",
+        "I moved design to three pods and a shared research and content seat. Capacity is planned in designer-weeks every quarter and rebalanced with product when the bets change."
+      ],
+      "align": "left",
+      "figure": {
+        "artifact": "capacity-lanes",
+        "caption": "D1 · Q3 capacity by app: three pods across four apps, plus the research and content seat.",
+        "decision": "D1"
+      }
+    },
+    {
+      "id": "hiring",
+      "eyebrow": "Hiring",
+      "heading": "One rubric, 38 days to offer",
+      "body": [
+        "I wrote the role scorecards before the job posts, then ran every candidate through the same steps: a portfolio screen, a paid three-hour exercise and a panel scored on one written rubric.",
+        "240 people applied. Every offer we made was accepted, a median of 38 days from application to signed offer."
+      ],
+      "align": "right",
+      "figure": {
+        "image": "hiring-board",
+        "caption": "D2 · Same rubric, every panel: craft, product thinking and collaboration, scored before the debrief.",
+        "decision": "D2"
+      }
+    },
+    {
+      "id": "budget",
+      "eyebrow": "Budget",
+      "heading": "Designer-weeks first, dollars second",
+      "body": [
+        "I own the design budget: CA$180,000 a year outside salaries, for contractors, tools and licences, research incentives and learning. I plan capacity first, then dollars, and hold 8% in reserve for the quarter that goes sideways.",
+        "The hire I didn’t make was design ops. A rotating ops seat gave that headcount to a product designer."
+      ],
+      "align": "left",
+      "figure": {
+        "artifact": "budget-plan",
+        "caption": "D3 · No ops hire: a rotating ops seat, and an 8% reserve that covered a contractor when Promotions slipped.",
+        "decision": "D3"
+      }
+    },
+    {
+      "id": "heart",
+      "eyebrow": "Gathering the numbers",
+      "heading": "Numbers someone will act on",
+      "body": [
+        "On the first working Monday of every month I gather a HEART scorecard for each app from product analytics, support tags and a standing panel of 40 merchants.",
+        "The team sees exactly what leadership sees. Every status is a word, so a red cell never needs a meeting to explain it."
+      ],
+      "align": "right",
+      "figure": {
+        "artifact": "heart-scorecard",
+        "caption": "D4 · September 2026: twenty signals, two at risk, each with a named owner.",
+        "decision": "D4"
+      }
+    },
+    {
+      "id": "brief",
+      "eyebrow": "Reporting up",
+      "heading": "One page, every month",
+      "body": [
+        "Leadership gets one page from me every month, two days after the scorecard: what shipped, what moved, what’s at risk and what I need. Twelve briefs in twelve months; the first three carried support and analytics numbers only, because the merchant panel took a quarter to stand up.",
+        "The asks on that page are how the design budget gets decided. When Promotions slipped, the risk, the fix and its cost were in the brief before anyone asked."
+      ],
+      "align": "left",
+      "figure": {
+        "artifact": "monthly-brief",
+        "caption": "The September 2026 brief as it went to the leadership team."
+      }
+    },
+    {
+      "id": "growth",
+      "eyebrow": "Rituals & growth",
+      "heading": "Rituals light enough to keep",
+      "body": [
+        "A weekly crit, two design reviews with engineering, one shared library and a written definition of ready cut the time from design done to in development by 35%.",
+        "Every designer has a 1:1 every two weeks and a growth plan on a four-level ladder we wrote together. Designers now run crit without me."
+      ],
+      "align": "right",
+      "figure": {
+        "image": "ladder",
+        "caption": "Career ladder v1.2: one line per level and track, and a growth plan that ended in a promotion."
+      }
+    }
+  ],
+  "compare": {
+    "before": "org-before",
+    "after": "org-after",
+    "label_before": "Before, Q3 2025",
+    "label_after": "After, Q3 2026",
+    "caption": "D1 · Same plan, same scale: one desk fielding four queues of tickets became three pods and a research seat around one library.",
+    "decision": "D1",
+    "modes": [
+      "wipe",
+      "overlay"
+    ]
+  },
+  "gallery": [
+    {
+      "image": "budget",
+      "caption": "D3 · The design budget month by month: under plan until the reserve paid for the Promotions contractor. Landed +2.4%.",
+      "decision": "D3"
+    },
+    {
+      "image": "sources",
+      "caption": "D4 · Report gathering: every HEART signal has one source and one owner, checked before the brief goes up.",
+      "decision": "D4"
+    },
+    {
+      "image": "capacity-q4",
+      "caption": "D1 · Q4 planning in designer-weeks: 71 asked, 62 available, and the 9 that moved to Q1 agreed with the PMs.",
+      "decision": "D1"
+    },
+    {
+      "image": "cover",
+      "caption": "The team as a plan: three pods, a research seat and a library, joined by crit, review and 1:1 corridors.",
+      "decision": "D1"
+    }
+  ],
+  "after_launch": [
+    {
+      "when": "+3 months",
+      "what": "First hires in; crit every Tuesday",
+      "metric": "One written rubric"
+    },
+    {
+      "when": "+6 months",
+      "what": "Shared library and a written definition of ready",
+      "metric": "Handoff −35%"
+    },
+    {
+      "when": "+12 months",
+      "what": "No one has left, budget landed",
+      "metric": "Within 3% of plan"
+    }
+  ],
+  "not_taken": [
+    "A designer per app. Simple to explain, but it made four silos and left no one to cover a holiday.",
+    "A design-team dashboard of screens shipped and tickets closed. It measured our activity, not the merchant’s outcome.",
+    "A full-time design-ops hire in a small team. A rotating seat did the job and kept a designer on the product."
+  ],
+  "reflections": [
+    "I hired for judgement and it paid off, but I under-invested in onboarding. The first hires took eight weeks to ship on their own; a written 30-day plan got the next ones there in four.",
+    "Reporting up felt like overhead until the month it wasn’t. When Promotions slipped, the brief had already named the risk and the fix, and the budget conversation took ten minutes."
+  ],
+  "deeper": [
+    {
+      "title": "The hiring rubric",
+      "body": [
+        "Each role had a one-page scorecard written before the post: three outcomes for the first year and the three competencies we would test — craft, product thinking and collaboration.",
+        "Panellists scored each competency from 1 to 4, alone and in writing, before the debrief. We hired at 3 or above on all three and 4 on at least one."
+      ]
+    },
+    {
+      "title": "What goes in the monthly brief",
+      "body": [
+        "Five headings on one page: Shipped, Moved, At risk, Asks, Next. Moved lists only numbers from the HEART scorecard. At risk always names a plan and an owner. Asks always carry a price or a person.",
+        "It goes out on the Wednesday after the scorecard lands, so the team and leadership argue from the same numbers."
+      ]
+    },
+    {
+      "title": "How the ladder was written",
+      "body": [
+        "Four levels by four tracks, one line each. I drafted it and the team rewrote it in two workshops; every designer placed themselves first, and we calibrate together each quarter.",
+        "Growth plans name one stretch responsibility per quarter, such as running crit or owning a pod’s onboarding."
+      ]
+    }
+  ],
+  "privacy_note": "Candidates and team members appear by initials only.",
+  "images": {
+    "cover": {
+      "w": 1200,
+      "h": 900,
+      "alt": "The design team drawn as a floor plan: three pod rooms, a research seat and a library, joined by crit, review and 1:1 corridors."
+    },
+    "hero": {
+      "w": 2400,
+      "h": 1500,
+      "alt": "Design health dashboard with each app’s HEART scorecard, one at-risk cell bracketed, beside the printed September brief."
+    },
+    "org-before": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Before: one room, a stretched design desk and ticket arrows from four PMs converging on it. No crit, no library, no scorecard."
+    },
+    "org-after": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "After, same plan and scale: three pods and a research seat around a shared library, linked by crit, review and 1:1 corridors."
+    },
+    "hiring-board": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Hiring board for a product designer role: candidates by initials, each scored on the same written rubric."
+    },
+    "ladder": {
+      "w": 1920,
+      "h": 1280,
+      "alt": "Career ladder: four levels by four tracks, and a growth plan that ended in a promotion."
+    },
+    "budget": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Budget screen for FY 2025–26: cumulative spend tracking under plan all year, CA$184,300 against CA$180,000, the reserve drawn in September."
+    },
+    "sources": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Where the September numbers come from: each HEART signal with its source, owner and status, and 37 of 40 panel merchants replied."
+    },
+    "capacity-q4": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Q4 2026 plan in designer-weeks: nine bets, 71 weeks asked, 62 available, and 9 weeks moved to Q1 with the PMs."
+    }
+  },
+  "seo": {
+    "title": "Building a design team — Sara Gholamali Poor",
+    "description": "Case study: building a design team for four Shopify apps — pods, hiring, budget, monthly HEART reporting and a career ladder."
+  },
+  "artifacts": [
+    {
+      "id": "hiring-funnel",
+      "kind": "bars",
+      "title": "Hiring funnel · product designers, 2025–26",
+      "caption": "Product designer pipeline, 2025–26. Every offer accepted. Median 38 days from application to signed offer.",
+      "data": {
+        "orientation": "horizontal",
+        "unit": "candidates",
+        "bars": [
+          {
+            "label": "Applicants",
+            "value": 240
+          },
+          {
+            "label": "Portfolio screens",
+            "value": 28
+          },
+          {
+            "label": "Paid exercises",
+            "value": 9
+          },
+          {
+            "label": "Panels",
+            "value": 5,
+            "highlight": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "budget-ring",
+      "kind": "ring",
+      "title": "Design budget · FY 2025–26",
+      "caption": "Plan by category, FY 2025–26 (Oct–Sep), outside salaries. Spend landed within 3% of plan.",
+      "data": {
+        "center": "CA$180k",
+        "center_label": "plan, FY 25–26",
+        "segments": [
+          {
+            "label": "Contractors",
+            "pct": 38
+          },
+          {
+            "label": "Tools & licences",
+            "pct": 24
+          },
+          {
+            "label": "Research incentives",
+            "pct": 18
+          },
+          {
+            "label": "Learning",
+            "pct": 12
+          },
+          {
+            "label": "Reserve",
+            "pct": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "budget-plan",
+      "kind": "table",
+      "title": "Design budget, plan vs actual · FY 2025–26",
+      "caption": "Spend outside salaries, October 2025 to September 2026. The year landed 2.4% over plan, inside the 3% band I committed to.",
+      "data": {
+        "head": [
+          "Category",
+          "Plan",
+          "Actual",
+          "Variance",
+          "Why it moved"
+        ],
+        "rows": [
+          [
+            "Contractors",
+            "CA$68,400",
+            "CA$69,500",
+            "+1.6%",
+            "Two prototyping sprints for the AI assistant"
+          ],
+          [
+            "Tools & licences",
+            "CA$43,200",
+            "CA$45,600",
+            "+5.6%",
+            "New seats, a quarter earlier than planned"
+          ],
+          [
+            "Research incentives",
+            "CA$32,400",
+            "CA$34,800",
+            "+7.4%",
+            "Merchant panel grew from 30 to 40 stores"
+          ],
+          [
+            "Learning",
+            "CA$21,600",
+            "CA$20,100",
+            "−6.9%",
+            "One conference moved to next year"
+          ],
+          [
+            "Reserve (8%)",
+            "CA$14,400",
+            "CA$14,300",
+            "−0.7%",
+            "Six-week design contractor for Promotions (D3)"
+          ],
+          [
+            "Total",
+            "CA$180,000",
+            "CA$184,300",
+            "+2.4%",
+            "Within 3% of plan"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "capacity-lanes",
+      "kind": "lanes",
+      "title": "Capacity plan · Q3 2026",
+      "caption": "64 designer-weeks, planned with product before anything was promised and rebalanced every quarter.",
+      "data": {
+        "total": "64 designer-weeks",
+        "columns": [
+          "Jul",
+          "Aug",
+          "Sep"
+        ],
+        "lanes": [
+          {
+            "label": "Restock alerts",
+            "value": "14 wks",
+            "items": [
+              {
+                "text": "Setup in 4 steps",
+                "value": "4 wks",
+                "start": 1,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Pre-order deposits",
+                "value": "10 wks",
+                "start": 2,
+                "span": 2,
+                "status": "active"
+              }
+            ]
+          },
+          {
+            "label": "Memberships",
+            "value": "16 wks",
+            "items": [
+              {
+                "text": "Member portal v2",
+                "value": "10 wks",
+                "start": 1,
+                "span": 2,
+                "status": "done"
+              },
+              {
+                "text": "Gifted memberships",
+                "value": "6 wks",
+                "start": 3,
+                "span": 1,
+                "status": "planned"
+              }
+            ]
+          },
+          {
+            "label": "Promotions",
+            "value": "10 wks",
+            "items": [
+              {
+                "text": "Promotion calendar",
+                "value": "6 wks",
+                "start": 1,
+                "span": 3,
+                "status": "active"
+              },
+              {
+                "text": "Polaris migration",
+                "value": "4 wks",
+                "start": 2,
+                "span": 2,
+                "status": "active"
+              }
+            ]
+          },
+          {
+            "label": "AI assistant",
+            "value": "18 wks",
+            "items": [
+              {
+                "text": "Hand-off v2",
+                "value": "12 wks",
+                "start": 1,
+                "span": 3,
+                "status": "active"
+              },
+              {
+                "text": "Answer audit",
+                "value": "6 wks",
+                "start": 3,
+                "span": 1,
+                "status": "planned"
+              }
+            ]
+          },
+          {
+            "label": "Systems & research",
+            "value": "6 wks",
+            "items": [
+              {
+                "text": "Library, merchant panel",
+                "value": "6 wks",
+                "start": 1,
+                "span": 3,
+                "status": "active"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "heart-scorecard",
+      "kind": "heatgrid",
+      "title": "HEART scorecard · September 2026",
+      "caption": "One row per app, every month, from product analytics, support tags and a standing panel of 40 merchants. Status is always a word.",
+      "data": {
+        "row_head": "App",
+        "cols": [
+          "Happiness (CSAT)",
+          "Engagement (weekly active stores)",
+          "Adoption (set up in 7 days)",
+          "Retention (90-day)",
+          "Task success"
+        ],
+        "rows": [
+          {
+            "label": "Restock alerts",
+            "cells": [
+              {
+                "value": "4.6 / 5",
+                "trend": "up",
+                "status": "on-track"
+              },
+              {
+                "value": "71%",
+                "trend": "up",
+                "status": "on-track"
+              },
+              {
+                "value": "60%",
+                "trend": "up",
+                "status": "on-track"
+              },
+              {
+                "value": "88%",
+                "trend": "flat",
+                "status": "on-track"
+              },
+              {
+                "value": "92% setup completed",
+                "trend": "up",
+                "status": "on-track"
+              }
+            ]
+          },
+          {
+            "label": "Memberships",
+            "cells": [
+              {
+                "value": "4.4 / 5",
+                "trend": "up",
+                "status": "on-track"
+              },
+              {
+                "value": "58%",
+                "trend": "flat",
+                "status": "watch"
+              },
+              {
+                "value": "47%",
+                "trend": "up",
+                "status": "watch"
+              },
+              {
+                "value": "91%",
+                "trend": "up",
+                "status": "on-track"
+              },
+              {
+                "value": "86% renewals set up",
+                "trend": "up",
+                "status": "on-track"
+              }
+            ]
+          },
+          {
+            "label": "Promotions",
+            "cells": [
+              {
+                "value": "4.3 / 5",
+                "trend": "flat",
+                "status": "watch"
+              },
+              {
+                "value": "62%",
+                "trend": "up",
+                "status": "on-track"
+              },
+              {
+                "value": "52%",
+                "trend": "down",
+                "status": "at-risk"
+              },
+              {
+                "value": "84%",
+                "trend": "flat",
+                "status": "watch"
+              },
+              {
+                "value": "89% discount live first try",
+                "trend": "up",
+                "status": "on-track"
+              }
+            ]
+          },
+          {
+            "label": "AI assistant",
+            "cells": [
+              {
+                "value": "4.1 / 5",
+                "trend": "up",
+                "status": "watch"
+              },
+              {
+                "value": "44%",
+                "trend": "up",
+                "status": "watch"
+              },
+              {
+                "value": "39%",
+                "trend": "up",
+                "status": "watch"
+              },
+              {
+                "value": "79%",
+                "trend": "down",
+                "status": "at-risk"
+              },
+              {
+                "value": "78% resolved without hand-off",
+                "trend": "up",
+                "status": "on-track"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "monthly-brief",
+      "kind": "brief",
+      "title": "Monthly brief to leadership · September 2026",
+      "caption": "One page every month, two days after the scorecard. Twelve of twelve sent on time.",
+      "data": {
+        "title": "Design · Monthly brief",
+        "period": "September 2026",
+        "from": "Design Lead",
+        "to": "Leadership team",
+        "sections": [
+          {
+            "heading": "Shipped",
+            "items": [
+              "Member portal v2 live in Memberships",
+              "AI assistant hand-off v2 for 30% of stores",
+              "Restock alerts pre-order deposits in beta"
+            ]
+          },
+          {
+            "heading": "Moved",
+            "items": [
+              "Activation +19 pts since Q1 (41% → 60%)",
+              "Design-to-dev handoff −35%",
+              "AI answers passing our rubric 87% → 91%"
+            ]
+          },
+          {
+            "heading": "At risk",
+            "items": [
+              "Promotions’ App Home redesign for Polaris web components is two sprints behind on design. Plan: a design contractor for six weeks, paid from the design reserve."
+            ]
+          },
+          {
+            "heading": "Asks",
+            "items": [
+              "Approve a CA$2,400 research-incentive top-up for the Q4 merchant panel",
+              "One engineering pair for two weeks of accessibility fixes in Memberships"
+            ]
+          },
+          {
+            "heading": "Next",
+            "items": [
+              "Q4 planning inputs due Fri, Oct 2",
+              "Career-ladder calibration",
+              "200-question audit of AI assistant answers"
+            ]
+          }
+        ],
+        "footer": "Design budget: 90% spent at 92% of the year · on track to land within 3% of plan"
+      }
+    },
+    {
+      "id": "week",
+      "kind": "cadence",
+      "title": "The design week",
+      "caption": "Under four hours of shared time per designer. If a ritual stops producing decisions, we cancel it.",
+      "data": {
+        "layout": "week",
+        "rows": [
+          {
+            "rhythm": "Weekly",
+            "items": [
+              {
+                "when": "Tue 10:00",
+                "name": "Crit",
+                "minutes": 60
+              },
+              {
+                "when": "Wed 14:00",
+                "name": "Design review with engineering",
+                "minutes": 45
+              },
+              {
+                "when": "Thu, every 2 weeks",
+                "name": "1:1s"
+              },
+              {
+                "when": "Fri 11:00",
+                "name": "Design review with engineering",
+                "minutes": 45
+              },
+              {
+                "when": "Fri 15:00",
+                "name": "Library office hours",
+                "minutes": 30
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "roadmap-2026",
+      "kind": "lanes",
+      "title": "Design roadmap · Q4 2025 → Q3 2026",
+      "caption": "Planned with the product and engineering leads. Design writes the problem statement before anyone writes a ticket.",
+      "data": {
+        "columns": [
+          "Q4 2025",
+          "Q1 2026",
+          "Q2 2026",
+          "Q3 2026"
+        ],
+        "lanes": [
+          {
+            "label": "Restock alerts",
+            "items": [
+              {
+                "text": "Setup in 4 steps",
+                "start": 2,
+                "span": 3,
+                "status": "done"
+              },
+              {
+                "text": "Pre-order deposits",
+                "start": 4,
+                "span": 1,
+                "status": "active"
+              }
+            ]
+          },
+          {
+            "label": "Memberships",
+            "items": [
+              {
+                "text": "Member portal v2",
+                "start": 2,
+                "span": 3,
+                "status": "done"
+              },
+              {
+                "text": "Gifted memberships",
+                "start": 4,
+                "span": 1,
+                "status": "planned"
+              }
+            ]
+          },
+          {
+            "label": "Promotions",
+            "items": [
+              {
+                "text": "Stacked discounts",
+                "start": 1,
+                "span": 2,
+                "status": "done"
+              },
+              {
+                "text": "Promotion calendar",
+                "start": 3,
+                "span": 2,
+                "status": "active"
+              }
+            ]
+          },
+          {
+            "label": "AI assistant",
+            "items": [
+              {
+                "text": "Review queue",
+                "start": 1,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Hand-off v2",
+                "start": 2,
+                "span": 3,
+                "status": "active"
+              },
+              {
+                "text": "Multilingual answers",
+                "start": 4,
+                "span": 1,
+                "status": "planned"
+              }
+            ]
+          },
+          {
+            "label": "Platform",
+            "items": [
+              {
+                "text": "Shared App Home",
+                "start": 1,
+                "span": 3,
+                "status": "done"
+              },
+              {
+                "text": "Polaris web components: 2 of 4 apps",
+                "start": 3,
+                "span": 2,
+                "status": "active"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ladder",
+      "kind": "ladder",
+      "title": "Design career ladder v1.2",
+      "caption": "Four levels, four tracks, written with the team. One promotion this year.",
+      "data": {
+        "levels": [
+          "Product designer",
+          "Senior product designer",
+          "Lead designer",
+          "Design lead"
+        ],
+        "tracks": [
+          "Craft",
+          "Product thinking",
+          "Collaboration",
+          "Leadership"
+        ],
+        "cells": [
+          [
+            "Ships polished flows on the shared library",
+            "Frames the problem before drawing screens",
+            "Works daily with one PM and their engineers",
+            "Gives clear, specific crit"
+          ],
+          [
+            "Sets the quality bar for a whole app",
+            "Shapes a roadmap with research and data",
+            "Aligns product, engineering and support",
+            "Runs crit and mentors one designer"
+          ],
+          [
+            "Owns patterns across all four apps",
+            "Turns strategy into a sequenced plan",
+            "Partners with product and engineering leads",
+            "Leads a pod and grows its designers"
+          ],
+          [
+            "Holds the bar across the suite",
+            "Sets design strategy with leadership",
+            "Represents design to leadership",
+            "Hires, budgets and builds the team"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cadence",
+      "kind": "cadence",
+      "title": "Operating cadence",
+      "caption": "How the year runs. Reports come in on the first working Monday and go up that Wednesday.",
+      "data": {
+        "layout": "chain",
+        "rows": [
+          {
+            "rhythm": "Weekly",
+            "items": [
+              {
+                "name": "Crit"
+              },
+              {
+                "name": "2 design reviews"
+              },
+              {
+                "name": "Library office hours"
+              }
+            ]
+          },
+          {
+            "rhythm": "Every 2 weeks",
+            "items": [
+              {
+                "name": "1:1s with every designer"
+              }
+            ]
+          },
+          {
+            "rhythm": "Monthly",
+            "items": [
+              {
+                "name": "HEART scorecard in",
+                "when": "1st working Monday",
+                "flow": "in"
+              },
+              {
+                "name": "Leadership brief out",
+                "when": "Wednesday after",
+                "flow": "out"
+              },
+              {
+                "name": "Portfolio review"
+              }
+            ]
+          },
+          {
+            "rhythm": "Quarterly",
+            "items": [
+              {
+                "name": "Planning with product and engineering"
+              },
+              {
+                "name": "OKR review"
+              },
+              {
+                "name": "Capacity rebalance"
+              },
+              {
+                "name": "Ladder check-ins"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "plates": [
+    {
+      "image": "hero",
+      "caption": "Design health and the brief to leadership"
+    },
+    {
+      "image": "hiring-board",
+      "caption": "Hiring: 240 applied, one written rubric"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-CA" data-page="case" data-rev="{{rev}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{{boot}}
+<title>{{title}}</title>
+<meta name="description" content="{{meta_description}}">
+{{robots}}
+<link rel="canonical" href="{{canonical}}">
+{{og}}
+{{fonts}}
+{{specimen_fonts}}
+<link rel="stylesheet" href="../../assets/css/main.css">
+<link rel="stylesheet" href="../../assets/css/artifacts.css">
+<link rel="stylesheet" href="../../assets/css/case.css">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+<script type="speculationrules">{"prerender":[{"where":{"href_matches":"../*"},"eagerness":"moderate"}]}</script>
+{{jsonld}}
+</head>
+<body class="case" data-sheet="{{sheet}}" style="{{stage_style}}">
+{{skip}}
+{{nav}}
+<main id="{{main_id}}" class="case-sheet" tabindex="-1">
+  <div class="case-layout">
+    <header class="case-head">
+      {{breadcrumb}}
+      <h1 class="case-title">{{title_html}}</h1>
+      <p class="case-dek">{{dek}}</p>
+    </header>
+    {{title_strip}}
+    <div class="case-flow">
+      {{hero}}
+      {{metrics}}
+      <div class="case-brief">
+        {{tldr}}
+        {{challenge}}
+        {{role}}
+        {{constraints}}
+      </div>
+      {{principles}}
+      {{decisions}}
+      {{process}}
+      {{compare}}
+      {{gallery}}
+      {{system}}
+      {{after_launch}}
+      {{learnings}}
+      {{deeper}}
+      {{privacy_note}}
+      {{next}}
+    </div>
+  </div>
+</main>
+{{footer}}
+<dialog class="lightbox" aria-label="Figure viewer" closedby="any">
+  <div class="lightbox__bar">
+    <span class="lightbox__count" aria-live="polite"></span>
+    <button type="button" class="lightbox__btn lightbox__prev" aria-label="Previous figure"><span aria-hidden="true">←</span></button>
+    <button type="button" class="lightbox__btn lightbox__next" aria-label="Next figure"><span aria-hidden="true">→</span></button>
+    <button type="button" class="lightbox__btn lightbox__zoom" aria-pressed="false" hidden>Zoom</button>
+    <button type="button" class="lightbox__btn lightbox__close" autofocus>Close<span aria-hidden="true"> ✕</span></button>
+  </div>
+  <figure class="lightbox__fig">
+    <div class="lightbox__img"></div>
+    <figcaption class="lightbox__cap"></figcaption>
+    <span class="lightbox__hint" aria-hidden="true">Drag to explore · double-tap to fit</span>
+  </figure>
+</dialog>
+<script type="module" src="../../assets/js/main.js"></script>
+<script type="module" src="../../assets/js/case.js"></script>
+</body>
+</html>

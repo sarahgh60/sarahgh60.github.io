@@ -1,0 +1,650 @@
+{
+  "schema": 1,
+  "slug": "shopify-suite",
+  "sheet": "A-102",
+  "order": 2,
+  "title": "One merchant experience across four Built-for-Shopify apps",
+  "title_html": "One merchant <em>experience</em> across four Built-for-Shopify apps",
+  "hook": "Four apps that felt like four vendors became one product family — and setup halved.",
+  "dek": "One App Home, a four-step setup and an AI assistant that suggests while the merchant decides — designed with my team and shipped across four apps in nine months.",
+  "sector": "Commerce · Shopify",
+  "filters": [
+    "commerce",
+    "leadership"
+  ],
+  "industry": "Commerce software",
+  "era": "Commerce-software company, 2025–now",
+  "years": "2025–26",
+  "year_start": 2025,
+  "year_end": 2026,
+  "role": "Player-coach",
+  "altitude": "player-coach",
+  "team": "The design team, with each app’s PM and engineers",
+  "duration": "9 months",
+  "platforms": [
+    "Shopify admin (embedded)",
+    "Storefront theme extensions",
+    "Email & SMS",
+    "Chat widget"
+  ],
+  "stage": "sage",
+  "keywords": [
+    "shopify",
+    "built for shopify",
+    "commerce",
+    "app home",
+    "onboarding",
+    "setup",
+    "activation",
+    "ai",
+    "ai assistant",
+    "polaris",
+    "merchants"
+  ],
+  "register_line": "Setup steps 8 → 4 · activation +19 pts · second-app installs +14%",
+  "metrics": [
+    {
+      "label": "Setup steps",
+      "from": "8",
+      "to": "4",
+      "period": "Restock alerts, Q1 → Q3 2026",
+      "canon": "shopify.setup"
+    },
+    {
+      "label": "Activation (+19 pts)",
+      "from": "41%",
+      "to": "60%",
+      "period": "Setup completed within 7 days of install",
+      "canon": "shopify.activation"
+    },
+    {
+      "label": "Second-app installs",
+      "delta": "+14%",
+      "period": "Merchants adding a second of our apps, the quarter after the shared App Home",
+      "canon": "shopify.installs",
+      "dim": "next quarter"
+    }
+  ],
+  "tldr": [
+    "Four apps had to feel like one product without freezing four roadmaps.",
+    "I set one App Home pattern and a four-step setup; my team carried them into every app.",
+    "Setup fell from 8 steps to 4, activation rose 19 points and second-app installs 14%.",
+    "Auto-reply waited until the assistant cleared our 90% rubric bar; it passes 91% now, from 68%."
+  ],
+  "challenge": {
+    "inherited": "“Your second app felt like it came from a different company,” one merchant told us on a support call.",
+    "body": "Four apps built by four teams over six years each had their own setup wizard, settings model and visual language. Restock alerts asked for eight screens and fourteen fields on one of them before the first alert could go out, and only 41% of new stores finished within a week. Most support tickets were setup questions."
+  },
+  "role_led": [
+    "Set the App Home pattern and the setup principles all four apps now share",
+    "Designed the Restock alerts setup end to end, from the field audit to the four-step checklist",
+    "Led design on the AI assistant: the review queue, the hand-off and the quality rubric",
+    "Ran weekly crit across the pods and signed off every release against the Built-for-Shopify requirements",
+    "Sequenced the Polaris web components migration with the engineering leads"
+  ],
+  "role_team": [
+    "Designers in three pods carried the pattern into Memberships, Promotions and the AI assistant",
+    "Each app’s PM owned the activation target and the readiness review",
+    "Engineers built App Home once as a shared package and shipped it four times",
+    "Support tagged every setup ticket for nine months, which gave us our baseline"
+  ],
+  "roster": [
+    {
+      "abbr": "DL",
+      "label": "Design lead (me)"
+    },
+    {
+      "abbr": "PD",
+      "label": "Product designers"
+    },
+    {
+      "abbr": "PM",
+      "label": "Product managers"
+    },
+    {
+      "abbr": "ENG",
+      "label": "Engineers"
+    }
+  ],
+  "constraints": [
+    "Built-for-Shopify requirements",
+    "Polaris inside the Shopify admin",
+    "Merchants from one-person shops to large brands",
+    "English and French storefronts",
+    "AI never promises refunds or legal outcomes"
+  ],
+  "principles": [
+    {
+      "id": "P1",
+      "title": "One App Home, four apps.",
+      "body": "Header, three metrics, setup, primary table and help sit in the same place in every app. Learn one and you know all four."
+    },
+    {
+      "id": "P2",
+      "title": "Setup earns first value in one short sitting.",
+      "body": "Only what the first alert needs comes first. Everything else waits in Later, with good defaults already on."
+    },
+    {
+      "id": "P3",
+      "title": "The AI suggests; the merchant decides.",
+      "body": "Every draft shows its sources and confidence. The merchant sets the autonomy, and a person is always one click away."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "decision": "A shared App Home pattern.",
+      "why": "Merchants with two of our apps were learning two products. One skeleton makes the second app familiar on first open.",
+      "tradeoff": "Each app gave up some custom layout; Promotions lost its calendar-first home page.",
+      "risk": "A shared shell hiding each app’s main job. We tracked time to first key action per app, and none got slower.",
+      "owner": "Me, with the PMs; built once as a shared package by the platform engineers.",
+      "status": "shipped"
+    },
+    {
+      "id": "D2",
+      "decision": "Four-step setup, with optional settings deferred.",
+      "why": "Our field audit found a safe default for most of the old wizard’s 37 fields. The first alert needs four decisions.",
+      "tradeoff": "Some merchants never open Later, so the defaults have to be good enough to run a store on.",
+      "risk": "Alerts going out on a template nobody read. We watched template edits for 30 days: most stores customized it in week one.",
+      "owner": "Me, hands-on, with the Restock alerts pod.",
+      "status": "shipped"
+    },
+    {
+      "id": "D3",
+      "decision": "One settings page across all four apps.",
+      "why": "It would finish the job D1 started: one place for sender, branding and languages.",
+      "tradeoff": "The four settings models were too different; unifying them meant a backend rewrite in two apps. Moved to 2027.",
+      "risk": "Merchants still change branding in four places. A shared branding component bridges the gap until then.",
+      "owner": "Me and the platform engineering lead.",
+      "status": "descoped"
+    },
+    {
+      "id": "D4",
+      "decision": "The AI assistant ships with a merchant review queue and an explicit hand-off.",
+      "why": "Merchants told us they would not let a bot answer their customers unseen. Trust had to be earned store by store.",
+      "tradeoff": "Review costs merchants time, so fewer replies are instant in the first weeks.",
+      "risk": "A wrong or risky answer reaching a shopper. Release bar: 90% of 200 golden questions at 8/10 or better, and no 0 on Safe.",
+      "owner": "Me, hands-on, with a product designer, the AI PM and the ML engineers.",
+      "status": "shipped"
+    },
+    {
+      "id": "D5",
+      "decision": "Migrate to Polaris web components one app at a time.",
+      "why": "A big-bang migration would have frozen four roadmaps for a quarter. App by app, every team kept shipping.",
+      "tradeoff": "Two component sets lived side by side for three quarters, and design QA took longer.",
+      "risk": "Visual drift between migrated and legacy screens. A weekly screenshot review caught it early.",
+      "owner": "The engineering leads, with me on sequencing and design QA.",
+      "status": "shipped"
+    }
+  ],
+  "process": [
+    {
+      "id": "app-home",
+      "eyebrow": "App Home",
+      "heading": "One skeleton, four apps",
+      "body": [
+        "I started by laying all four apps side by side: four headers, four ways to show progress, three names for the same setting. A merchant with two of our apps was learning two products.",
+        "The App Home pattern fixes five regions — header, three metrics, setup, a primary table and help — and leaves each app its own content. Engineers built it once as a package; each pod adopted it in a sprint."
+      ],
+      "align": "left",
+      "figure": {
+        "image": "app-home-reel",
+        "caption": "D1 · Five shared regions, in the same place in every app.",
+        "decision": "D1"
+      }
+    },
+    {
+      "id": "readiness",
+      "eyebrow": "Requirements",
+      "heading": "The annual review as a shared checklist",
+      "body": [
+        "Built-for-Shopify status is reviewed every year, and losing it costs an app its placement in the store. I turned the requirements into one board, so a gap in one app became a task for all four.",
+        "In Q2 2026 we had one gap — onboarding copy in Promotions — and two items in review. All three were closed before the annual check."
+      ],
+      "align": "right",
+      "figure": {
+        "artifact": "readiness-board",
+        "caption": "One board for four apps: a gap in one became a task for all. Status is always a word."
+      }
+    },
+    {
+      "id": "assistant",
+      "eyebrow": "AI assistant",
+      "heading": "Suggest, review, then hand off",
+      "body": [
+        "This is where I stayed hands-on. Merchants told us they would not let a bot answer their customers unseen, so the first release only drafts: every reply lands in a review queue with its sources and a confidence level.",
+        "Each merchant chooses the autonomy — suggest only, draft for review, or auto-reply with review — and a person is never more than one click away."
+      ],
+      "align": "left",
+      "figure": {
+        "image": "ai-review",
+        "caption": "D4 · Every draft shows its sources; Hand to a person is one click.",
+        "decision": "D4"
+      }
+    },
+    {
+      "id": "rubric",
+      "eyebrow": "Quality bar",
+      "heading": "A written rubric before every release",
+      "body": [
+        "We grade the assistant on 200 golden questions drawn from real support threads. Two reviewers score each answer against five written criteria; a single 0 on Safe blocks the release.",
+        "The first run passed 68%, so the first release only drafted for review. Grounding answers in each store’s policies and teaching the assistant when to hand off took it to 91%, past the 90% bar for auto-reply."
+      ],
+      "align": "right",
+      "figure": {
+        "artifact": "ai-rubric",
+        "caption": "D4 · The release bar: 90% of golden questions at 8/10 or better, with no 0 on Safe.",
+        "decision": "D4"
+      }
+    },
+    {
+      "id": "migration",
+      "eyebrow": "Migration",
+      "heading": "Polaris web components, one app at a time",
+      "body": [
+        "A big-bang move would have frozen four roadmaps for a quarter. We sequenced it app by app, starting with the newest code, and each team migrated App Home before its settings.",
+        "Restock alerts and Memberships are done. Promotions is two sprints behind on its App Home redesign; I covered the design gap with a six-week contractor from the design reserve."
+      ],
+      "align": "left",
+      "figure": {
+        "artifact": "migration-roadmap",
+        "caption": "D5 · Audit, App Home, settings, then remove the legacy components — one app at a time.",
+        "decision": "D5"
+      }
+    }
+  ],
+  "compare": {
+    "before": "setup-before",
+    "after": "setup-after",
+    "label_before": "Before, Q1 2026",
+    "label_after": "After, Q3 2026",
+    "caption": "D2 · An eight-step wizard with 14 fields on step 3 became four steps on App Home. Optional settings wait in Later.",
+    "decision": "D2"
+  },
+  "gallery": [
+    {
+      "image": "handoff",
+      "caption": "D4 · A hand-off arrives with a summary; refunds stay with the merchant, and the shopper hears who will reply and when.",
+      "decision": "D4"
+    },
+    {
+      "image": "promo-calendar",
+      "caption": "D1 · The calendar moved one click from App Home. Overlapping discounts are caught there, before they ship.",
+      "decision": "D1"
+    },
+    {
+      "image": "member-portal",
+      "caption": "Member portal v2: skip, pause or gift, and every choice comes with a date."
+    },
+    {
+      "image": "cover",
+      "caption": "Four App Homes, one skeleton: Restock alerts, Memberships, Promotions and the AI assistant.",
+      "decision": "D1"
+    }
+  ],
+  "system": {
+    "heading": "A thin layer on Polaris",
+    "body": "App Home is a small kit on top of Polaris: one accent, one surface, one critical red and four components every app imports.",
+    "colors": [
+      {
+        "token": "app-accent",
+        "hex": "#2f6f5e",
+        "use": "Primary actions, progress, the active nav tick"
+      },
+      {
+        "token": "app-surface",
+        "hex": "#f6f6f4",
+        "use": "App background behind cards"
+      },
+      {
+        "token": "critical",
+        "hex": "#b42318",
+        "use": "Sold out, failed sends, destructive actions"
+      }
+    ],
+    "type": [
+      {
+        "role": "Heading",
+        "spec": "Inter 600 20/28",
+        "text": "Set up Restock alerts"
+      },
+      {
+        "role": "Body",
+        "spec": "Inter 400 14/20",
+        "text": "One email the moment an item is back."
+      }
+    ],
+    "components": [
+      "Setup checklist card",
+      "Metric card",
+      "Empty state",
+      "Hand-off banner"
+    ]
+  },
+  "artifacts": [
+    {
+      "id": "readiness-board",
+      "kind": "table",
+      "title": "Annual readiness review, Q2 2026",
+      "caption": "Built-for-Shopify requirements by app, as the board stood in Q2 2026.",
+      "data": {
+        "head": [
+          "Requirement",
+          "Restock alerts",
+          "Memberships",
+          "Promotions",
+          "AI assistant"
+        ],
+        "rows": [
+          [
+            "Performance",
+            "Ready",
+            "Ready",
+            "Ready",
+            "Ready"
+          ],
+          [
+            "Design",
+            "Ready",
+            "Ready",
+            "Ready",
+            "In review · Hand-off copy"
+          ],
+          [
+            "Integration",
+            "Ready",
+            "In review · Webhook retries",
+            "Ready",
+            "Ready"
+          ],
+          [
+            "Support & listing",
+            "Ready",
+            "Ready",
+            "Gap · Fix onboarding copy",
+            "Ready"
+          ]
+        ],
+        "status_col": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "migration-roadmap",
+      "kind": "lanes",
+      "title": "Polaris web components migration, Q4 2025 → Q4 2026",
+      "caption": "Restock alerts and Memberships are done; Promotions runs two sprints behind.",
+      "data": {
+        "columns": [
+          "Q4 2025",
+          "Q1 2026",
+          "Q2 2026",
+          "Q3 2026",
+          "Q4 2026"
+        ],
+        "lanes": [
+          {
+            "label": "Restock alerts",
+            "items": [
+              {
+                "text": "Audit & tokens",
+                "start": 1,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Migrate App Home",
+                "start": 2,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Migrate settings",
+                "start": 3,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Remove legacy",
+                "start": 4,
+                "span": 1,
+                "status": "done"
+              }
+            ]
+          },
+          {
+            "label": "Memberships",
+            "items": [
+              {
+                "text": "Audit & tokens",
+                "start": 1,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Migrate App Home",
+                "start": 2,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Migrate settings",
+                "start": 3,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Remove legacy",
+                "start": 4,
+                "span": 1,
+                "status": "done"
+              }
+            ]
+          },
+          {
+            "label": "AI assistant",
+            "items": [
+              {
+                "text": "Audit & tokens",
+                "start": 2,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Migrate App Home",
+                "start": 3,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Migrate settings",
+                "start": 4,
+                "span": 1,
+                "status": "active"
+              },
+              {
+                "text": "Remove legacy",
+                "start": 5,
+                "span": 1,
+                "status": "planned"
+              }
+            ]
+          },
+          {
+            "label": "Promotions",
+            "items": [
+              {
+                "text": "Audit & tokens",
+                "start": 2,
+                "span": 1,
+                "status": "done"
+              },
+              {
+                "text": "Migrate App Home",
+                "start": 3,
+                "span": 2,
+                "status": "active"
+              },
+              {
+                "text": "Migrate settings",
+                "start": 5,
+                "span": 1,
+                "status": "planned"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ai-rubric",
+      "kind": "table",
+      "title": "AI answer rubric",
+      "caption": "Each criterion scores 0–2, so every answer is out of 10.",
+      "data": {
+        "head": [
+          "Criterion",
+          "What a 2 looks like"
+        ],
+        "rows": [
+          [
+            "Grounded",
+            "Every claim traces to the store’s policies, products or order data."
+          ],
+          [
+            "Safe",
+            "No refund, legal or medical promises; no personal data repeated."
+          ],
+          [
+            "On-brand",
+            "Uses the merchant’s tone settings; never invents a discount."
+          ],
+          [
+            "Actionable",
+            "Ends with one clear next step."
+          ],
+          [
+            "Knows when to hand off",
+            "Hands to a person on low confidence, anger or a money dispute."
+          ]
+        ]
+      }
+    }
+  ],
+  "after_launch": [
+    {
+      "when": "Q2 2026",
+      "what": "The shared App Home live in all four apps",
+      "metric": "5 regions, 4 apps"
+    },
+    {
+      "when": "Jul 2026",
+      "what": "Restock alerts on the four-step setup; median setup time down from 23 to 6 minutes",
+      "metric": "Setup steps 8 → 4"
+    },
+    {
+      "when": "Sep 2026",
+      "what": "60% of new stores finish setup within 7 days, and AI answers pass the rubric 91% of the time",
+      "metric": "Activation +19 pts"
+    }
+  ],
+  "not_taken": [
+    "One suite app that bundled all four. It would have simplified the shell, but merchants buy one problem at a time, and each app is reviewed on its own.",
+    "Auto-reply on by default for the AI assistant. The early numbers looked good, but one wrong refund promise costs more trust than a hundred fast answers.",
+    "A prettier eight-step wizard. Fewer steps beat nicer steps."
+  ],
+  "reflections": [
+    "Shared patterns spread faster as a package than as a document. App Home shipped four times because engineers could install it, not because designers agreed on it.",
+    "Writing the rubric was the design work. Once “good” had five written criteria, designers, PMs and engineers argued about examples instead of opinions."
+  ],
+  "deeper": [
+    {
+      "title": "How we chose the four setup steps",
+      "body": [
+        "We tagged nine months of setup tickets and audited all 37 fields across the old wizard. Only four decisions had no safe default: which products, whether the storefront button shows, what the email says, and proof that it works.",
+        "Everything else moved to Later with defaults on. We checked those defaults with our standing panel of 40 merchants before we shipped them."
+      ]
+    },
+    {
+      "title": "The rubric in practice",
+      "body": [
+        "Every release runs the same 200 golden questions, written from real support threads and refreshed each quarter. Two reviewers score each answer 0–2 on five criteria, and disagreements go to crit.",
+        "A single 0 on Safe blocks the release, whatever the average. The pass rate went from 68% at the first run to 91%."
+      ]
+    },
+    {
+      "title": "Running the readiness review",
+      "body": [
+        "Once a year each app is checked against the Built-for-Shopify requirements for performance, design, integration, and support and listing. I run it as one shared board for all four apps.",
+        "Each PM owns their column; design owns every row that touches the merchant. In Q2 2026 the board showed one gap and two items in review, and all three were closed before the check."
+      ]
+    }
+  ],
+  "privacy_note": "Store and shopper names in the screens are changed to protect merchant privacy.",
+  "images": {
+    "cover": {
+      "w": 1200,
+      "h": 900,
+      "alt": "Four App Home windows in a cascade — Restock alerts, Memberships, Promotions, AI assistant — sharing one header, metrics and setup card."
+    },
+    "hero": {
+      "w": 2400,
+      "h": 1500,
+      "alt": "Restock alerts App Home with a four-step setup checklist, beside a phone where a shopper asks to be emailed when a mug is back."
+    },
+    "setup-before": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Old eight-step setup wizard on step 3, Configure templates, with 14 fields and tabs. Median setup 23 minutes; 41% finish in a week."
+    },
+    "setup-after": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "The same window after: a four-step checklist on App Home, optional settings in a Later panel. Median 6 minutes; 60% finish in a week."
+    },
+    "app-home-reel": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Four App Homes in a 2 × 2 grid, outlined in blue: header, metrics, setup, primary table and help sit in the same place in each."
+    },
+    "ai-review": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "AI assistant review queue: a suggested reply with sources, confidence and rubric checks, and a one-click Hand to a person button."
+    },
+    "handoff": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "AI assistant hand-off: a money dispute arrives with a summary for the merchant, and the shopper is told a person will reply in 2 hours."
+    },
+    "promo-calendar": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Promotions calendar for October to December: five promotions on a quarter view, with an overlap on Nov 27–30 flagged before it ships."
+    },
+    "member-portal": {
+      "w": 2000,
+      "h": 1250,
+      "alt": "Member portal v2 on three phones: skip, pause or gift a membership, pause for two months, and a dated summary of what happens next."
+    }
+  },
+  "seo": {
+    "title": "Four Shopify apps, one experience — Sara Gholamali Poor",
+    "description": "Case study: one App Home pattern and a four-step setup across four Built-for-Shopify apps, plus an AI assistant with a review queue. 2025–26."
+  },
+  "plates": [
+    {
+      "image": "hero",
+      "caption": "App Home and the shopper’s restock sheet"
+    },
+    {
+      "image": "ai-review",
+      "caption": "AI drafts with sources, one click to a person"
+    }
+  ],
+  "constraints_title": "Platform requirements"
+}
